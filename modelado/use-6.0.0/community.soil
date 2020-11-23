@@ -1,0 +1,12 @@
+reset
+
+!p1:= new Person('Lucia')
+!p2:= new Person('Angel')
+!p3:= new Person('Maria')
+!p4:= new Person('Antonio')
+!p5:= new Person('Ruben')
+!p6:= new Person('Pedro')
+!p7:= new Person('Jesus')
+!p8:= new Person('Laura')
+!p9:= new Person('Lourdes')
+!p10:= new Person('Juan')

@@ -1,0 +1,195 @@
+model CadenaDeMontaje
+
+abstract class Elemento
+  attributes
+    x:Integer
+    y:Integer
+end
+abstract class Maquina < Elemento
+  attributes
+    tiempoProcesado:Integer
+  operations
+    start()
+    stop()
+end
+abstract class GeneradorPiezas < Maquina
+end
+class GeneradorMangos < GeneradorPiezas
+  attributes
+    contador:Integer
+  operations
+    start()
+      begin -- test implementation, it only generates one Part
+        declare m1:Mango;
+        m1:=self.generate();
+        self.salida.put(m1);
+       end
+    generate():Mango
+      begin
+          result:=new Mango;
+          self.contador := self.contador + 1;
+      end
+end
+class GeneradorCabezas < GeneradorPiezas
+  attributes
+    contador:Integer
+  operations
+    generate():Cabezal
+      begin
+          result:=new Cabezal;
+          self.contador:=self.contador+1;
+      end
+    start()
+      begin -- test implementation, it only generates two Parts
+        declare c1:Cabezal, c2:Cabezal;
+        c1:=self.generate();
+        self.salida.put(c1);
+        c2:=self.generate();
+        self.salida.put(c2);
+       end
+end
+class Ensamblador < Maquina
+  operations
+    start()
+      begin 
+        declare c:Pieza, h:Pieza, m: Martillo, 
+                b1:Bandeja, b2:Bandeja, b3:Bandeja;
+        b1:=self.entrada->select(b|(b.piezas->size>0) and (b.piezas->forAll(p|p.oclIsTypeOf(Cabezal))))->asSequence()->first();
+        c:=b1.get();
+        b2:=self.entrada->select(b|(b.piezas->size>0) and (b.piezas->forAll(p|p.oclIsTypeOf(Mango))))->asSequence()->first();
+        h:=b2.get();
+        m:=self.assemble(c.oclAsType(Cabezal),h.oclAsType(Mango));
+        b3:=self.salida;
+        b3.put(m);
+       end
+ 
+    assemble(c:Cabezal,m:Mango):Martillo
+      begin
+        destroy c,m;
+        result:=new Martillo;
+        result.estaPulido:=false;
+      end
+end
+class Pulidora < Maquina
+  operations
+    start()
+      begin
+        declare m: Pieza, b : Bandeja;
+        b:=self.entrada->select(b|(b.piezas->size>0) and (b.piezas->forAll(p|p.oclIsTypeOf(Martillo))))->asSequence()->first();
+        m:=b.get();
+        self.polish(m.oclAsType(Martillo));
+        self.salida.put(m);
+       end
+    polish(m:Martillo)
+      begin
+        m.estaPulido:=true;
+      end
+end
+
+class Bandeja < Elemento
+  attributes
+    capacidad:Integer
+  operations
+    put(p:Pieza)
+      begin
+          insert(self, p ) into Contenido;
+      end
+      pre notFull: (self.piezas->size() < capacidad)
+      post ElementAdded: (self.piezas = self.piezas@pre->append(p))
+      
+    get():Pieza
+      begin
+         result:=self.piezas->at(1);
+         delete( self, result) from Contenido;
+      end
+      pre notEmpty: self.piezas->size()>0
+      post FirstElementRemoved: 
+         result = self.piezas@pre->at(1) and 
+         self.piezas@pre=self.piezas->prepend(result) 
+
+    size():Integer = self.piezas->size()
+    
+  statemachines
+    psm Buffer
+      states
+        s: initial 
+        Empty [self.piezas->size()=0]
+        Normal
+        Full [self.piezas->size()=self.capacidad]    
+      transitions
+        s -> Empty
+        Empty -> Normal { [self.capacidad>1] put() } 
+        Normal -> Normal { [self.piezas->size()<capacidad-1] put() }
+        Normal -> Full { [(self.capacidad>1) and (self.piezas->size()=capacidad-1)] put() }
+        Empty -> Full { [self.capacidad=1] put() }
+        -- Empty -> Empty { size() }   -- Query operations do not change the object state
+        -- Normal -> Normal { size() } -- Query operations do not change the object state
+        -- Full -> Full { size() }   -- Query operations do not change the object state
+        Full -> Empty { [self.capacidad=1] get() }
+        Full -> Normal { [self.capacidad>1] get() }
+        Normal -> Normal { [(self.capacidad>1) and (self.piezas->size()>1)] get() }
+        Normal -> Empty { [self.piezas->size()=1] get() }
+    end
+end
+abstract class Pieza
+end
+class Cabezal < Pieza
+end
+class Mango < Pieza
+end
+class Martillo < Pieza
+  attributes
+    estaPulido:Boolean
+end
+
+-- associations
+association Output between
+  Maquina [1..*] role entrada
+  Bandeja [1] role salida
+end
+
+association Input between
+  Bandeja [*] role entrada
+  Maquina [*] role salida
+end
+
+aggregation Contenido between
+  Bandeja [1] role bandeja 
+  Pieza [*] role piezas ordered
+end 
+
+constraints
+
+context Bandeja inv AtLeastOneCell:
+  self.capacidad > 0
+
+context Bandeja inv PiezasDelMismoTipo:
+-- self.piezas->forAll(p1,p2|p1.oclType()=p2.oclType()) 
+-- no oclType() in USE. Alternative spec:
+  self.piezas->forAll(p|p.oclIsTypeOf(Martillo)) or
+  self.piezas->forAll(p|p.oclIsTypeOf(Mango)) or
+  self.piezas->forAll(p|p.oclIsTypeOf(Cabezal))
+
+context Ensamblador inv UnaEntradaDeMangos:
+  self.entrada->exists(b|b.piezas->forAll(p|p.oclIsTypeOf(Mango)))
+
+context Ensamblador inv UnaEntradaDeCabezales:
+  self.entrada->exists(b|b.piezas->forAll(p|p.oclIsTypeOf(Cabezal)))
+  
+context Pulidora inv EntranMartillos:
+  self.entrada->forAll(b|b.piezas->forAll(p|p.oclIsTypeOf(Martillo)))
+
+context GeneradorCabezas inv SalenCabezas:
+  self.salida.piezas->forAll(p|p.oclIsTypeOf(Cabezal))
+
+context GeneradorMangos inv SalenMangos:
+  self.salida.piezas->forAll(p|p.oclIsTypeOf(Mango))
+
+context Ensamblador inv SalenMartillos:
+  self.salida.piezas->forAll(p|p.oclIsTypeOf(Martillo))
+
+context Pulidora inv SalenMartillos:
+  self.salida.piezas->forAll(p|p.oclIsTypeOf(Martillo))
+  
+context GeneradorPiezas inv SinEntrada:
+  self.entrada->size()=0

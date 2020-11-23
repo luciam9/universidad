@@ -1,0 +1,30 @@
+--Maquinas
+!new GeneradorMangos('gm')
+!gm.contador:=0;
+!new GeneradorCabezas('gc')
+!gc.contador:=0;
+!new Ensamblador('en')
+!new Pulidora('pu')
+--Bandejas
+!new Bandeja('b1')
+!b1.capacidad:=5;
+!new Bandeja('b2')
+!b2.capacidad:=5;
+!new Bandeja('b3')
+!b3.capacidad:=5;
+!new Bandeja('b4')
+!b4.capacidad:=5;
+--Conexiones de la planta
+!insert (gm,b1) into Output
+!insert (gc,b2) into Output
+!insert (b1,en) into Input
+!insert (b2,en) into Input
+!insert (en,b3) into Output
+!insert (b3,pu) into Input
+!insert (pu,b4) into Output
+-- Proceso
+!gc.start()
+!gm.start()
+!en.start()
+!pu.start()
+

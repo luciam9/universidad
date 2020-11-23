@@ -1,0 +1,194 @@
+
+model Community
+
+enum phases {child, young, adult, elder}
+
+enum status {married, single, divorced, widower}
+
+class Community 
+    attributes
+        childToYoung : Integer
+        youngToAdult : Integer
+        adultToElder : Integer
+
+    operations
+        tick()
+            begin
+                for p in self.person do
+                    p.age := p.age + 1;
+                end
+            end
+end
+
+enum phases {child, young, adult, elder}
+
+enum status {married, single, divorced, widower}
+
+class Person 
+    attributes
+        birthYear : Integer
+        deathYear : Integer
+        age : Integer
+        isDead : Boolean
+        phase : phases
+        maritalStatus : status
+
+    operations
+        die()
+        consent() : Boolean
+        toYoung()
+        toAdult()
+        toElder()
+        isMarried(): Boolean
+        marriages() : Integer
+
+    statemachines
+        psm estadoPersona
+            states
+                isBorn : initial
+                single [self.maritalStatus:= status :: single]
+                married [self.maritalStatus:= status :: married]
+                divorced [self.maritalStatus:= status :: divorced]
+                widow [self.maritalStatus:= status :: widow]
+
+            transitions
+                s -> single
+                single -> married {self.maritalStatus:= status :: married}
+                married -> divorced {self.maritalStatus:= status :: divorced}
+                married -> widow {self.maritalStatus:= status :: widow}
+                widow -> married {self.maritalStatus:= status :: married}
+                divorced -> married {self.maritalStatus:= status :: married}
+        end       
+end
+
+class Marriage
+    attributes
+        startYear : Integer
+        endYear : Integer
+
+    operations
+        divorce (hus : Person, wif : Person)
+        marry (hus : Person, wif : Person)
+        widowed (hus : Person, wif : Person)
+end
+
+class Clock 
+    attributes
+        NOW : Integer
+
+    operations
+        run (n: Integer)
+            begin
+                for i in Sequence{1..n} do 
+                    self.NOW := self.NOW + 1;
+                    for c in self.community do
+                    c.tick();
+                    end
+                end
+            end
+            pre : n >= 0
+            post: self.NOW = self.NOW@pre + n
+end
+
+
+
+composition pertenece between
+    Person [0..*] role person 
+    Community [1] role community
+end
+
+aggregation cuenta between
+    Clock [1] role clock
+    Community [0..*] role community
+end
+
+association maridoDe between
+    Person [1] role husband
+    Marriage [0..*] role wife
+end
+
+association mujerDe between 
+    Person [1] role wife
+    Marriage [0..*] role husband
+end
+
+constraints 
+--aleticas
+--Una persona no puede fallecer antes de nacer
+context Person inv fechaNacimientoMenorQueFallecimiento: self.birthYear < self.deathYear
+
+--Un matrimonio no puede acabar antes de empezar
+context Marriage inv fechaInicioMenorQueTermino: self.startYear < self.endYear
+
+--Los muertos no pueden estar casados. 
+context Person inv siMuertoNoCasado: self.isDead = true
+implies ((self.wife -> select (w | w.endYear.oclIsUndefined) -> size() = 0) and 
+(self.husband -> select (h | h.endYear.oclIsUndefined) -> size() = 0))
+
+--No puede haber matrimonios futuros (“acordados”): Clock.NOW tiene que ser siempre mayor o igual que
+--cualquier fecha de comienzo de un matrimonio
+context Marriage inv matrimonioNoAcordado: self.startYear < self.husband.community.clock.NOW
+
+--No se puede nacer en el futuro: Clock.NOW tiene que ser mayor o igual que cualquier fecha de nacimiento.
+context Community inv fechaNacimiento: self.person.birthYear < self.clock.NOW
+
+--No se puede divorciar una persona de alguien con quien no esté actualmente casado.
+--esta restricción está ya recogida en la precondición del método divorce() de la clase persona.
+
+
+--deonticas
+--Una persona no puede estar casada consigo misma.
+context Person inv noCasadoConsigo: self.husband.husband -> forAll (p : Person | p <> self)
+and self.wife.wife -> forAll (p : Person | p <> self)
+
+--No puede haber más que un reloj en toda la aplicación (y por tanto compartido por todas las comunidades)
+context Community inv soloUnReloj: self.clock -> size() = 1
+
+--Monogamia: Una persona no puede tener más de un matrimonio activo en un momento dado.
+context Person inv monogamia: (self.husband -> select(h | h.endYear.oclIsUndefined()) -> size() < 2) and (self.wife -> select(w | w.endYear.oclIsUndefined()) -> size() < 2)
+
+--No se permite ni la eutanasia ni el suicidio
+context Community inv noSuicidioNiEutansia: self.person.deathYear < self.clock.NOW or self.person.deathYear.oclIsUndefined()
+
+--Los niños no pueden estar casados
+context Persona inv ninyoNoCasado: self.age < self.community.childToYoung implies (self.wife -> size() = 0 and self.husband -> size() = 0)
+
+
+--queries
+--isMarried():Boolean que devuelve si una persona está actualmente casada o no
+context Person :: isMarried(): Boolean
+body: (self.husband -> notEmpty()) or (self.wife -> notEmpty())
+
+--marriages():Integer que devuelve el número de matrimonios que ha tenido una persona a lo largo de su vida
+--(incluido el actual, si es que estás casado)
+context Person :: marriages(): Integer
+body: (self.husband -> size()) + (self.wife -> size()) 
+
+--pre/postconditions
+
+context Marriage :: divorce(hus : Person, wif : Person)
+    pre: self.wife -> select (w | w = wif) -> notEmpty() 
+    and self.husband -> select (h | h = hus) -> notEmpty() and self.endYear.oclIsUndefined() 
+    post: self.endYear = self.husband.community.clock.NOW and hus.maritalStatus:= status :: divorced and wif.maritalStatus:= status :: divorced and hus.consent() = true and wif.consent() = true
+
+context Person :: marry (hus : Person, wif : Person)
+    pre : self.wife -> select (w | w = wif) -> isEmpty() and self.husband -> select (h | h = hus) -> isEmpty() 
+    post : self.startYear = self.husband.community.clock.NOW and hus.maritalStatus:= status :: married and wif.maritalStatus:= status :: married and hus.consent() = true and wif.consent() = true
+
+context Person :: die()
+    pre : self.isDead = false and self.deathYear.oclIsUndefined()
+    post : self.isDead = true and self.deathYear = self.community.clock.NOW
+       
+
+
+context Person :: toYoung()
+    pre : self.community.clock.NOW - self.birthYear = self.community.childToYoung and self.phase :: child
+    post : self.phase :: young
+
+context Person :: toAdult()
+    pre : self.community.clock.NOW - self.birthYear = self.community.youngToAdult and self.phase :: young
+    post : self.phase :: adult
+
+context Person :: toElder()
+    pre : self.community.clock.NOW - self.birthYear = self.community.adultToElder and self.phase :: adult
+    post : self.phase :: elder

@@ -1,0 +1,18 @@
+!new Buffer('b')
+!b.capacity:=3
+!new Element('e1')
+!new Element('e2')
+!new Element('e3')
+!b.put(e1)
+?b.size()
+!e1:=b.get()
+?b.size()
+!b.put(e1)
+!b.put(e2)
+!b.put(e3)
+!e2:=b.get()
+!e2:=b.get()
+!e2:=b.get()
+
+
+

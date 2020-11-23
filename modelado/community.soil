@@ -1,0 +1,122 @@
+reset
+
+!clock:= new Clock('reloj')
+
+
+
+!c1:= new Community('Malaga')
+!c1.childToYoung:= 15
+!c1.youngToAdult:= 29
+!c1.adultToElder:= 65
+
+!insert (reloj, Malaga) into cuenta
+
+!p1:= new Person('Lucia')
+!p1.birthYear:= 1999
+!p1.age:= 21
+!p1.isDead:= false
+!p1.phase:= phases :: young
+!p1.maritalStatus:= status :: single
+
+!p2:= new Person('Angel')
+!p2.birthYear:= 1982
+!p2.age:= 38
+!p2.isDead:= false
+!p2.phase:= phases :: adult
+!p2.maritalStatus:= status:: married
+
+!p3:= new Person('Maria')
+!p3.birthYear:= 1936
+!p3.age:= 84
+!p3.isDead:= true
+!p3.phase:= phases :: elder
+!p3.maritalStatus:= status:: widow
+
+!p4:= new Person('Antonio')
+!p4.birthYear:= 2002
+!p4.age:= 18
+!p4.isDead:= false
+!p4.phase:= phases :: young
+!p4.maritalStatus:= status :: single
+
+!p5:= new Person('Ruben')
+!p5.birthYear:= 2009
+!p5.age:= 11
+!p5.isDead:= false
+!p5.phase:= phases :: child
+!p5.maritalStatus:= status :: single
+
+!p6:= new Person('Pedro')
+!p6.birthYear:= 1970
+!p6.age:= 50
+!p6.isDead:= false
+!p6.phase:= phases :: adult
+!p6.maritalStatus:= status :: divorced
+
+!p7:= new Person('Jesus')
+!p7.birthYear:= 2019
+!p7.age:= 1
+!p7.isDead:= false
+!p7.phase:= phases :: child
+!p7.maritalStatus:= status :: single
+
+!p8:= new Person('Laura')
+!p8.birthYear:= 1992
+!p8.age:= 28
+!p8.isDead:= false
+!p8.phase:= phases :: young
+!p8.maritalStatus:= status :: married
+
+!p9:= new Person('Lourdes')
+!p9.birthYear:= 1950
+!p9.age:= 70
+!p9.isDead:= false
+!p9.phase:= phases :: elder
+!p9.maritalStatus:= status :: widow
+
+!p10:= new Person('Juan')
+!p10.birthYear:= 1946
+!p10.deathYear:= 2018
+!p10.age:= 74
+!p10.isDead:= true
+!p10.phase:= phases :: elder
+!p10.maritalStatus:= status :: married
+
+!p11:= new Person('Carmen')
+!p11.birthYear:= 1970
+!p11.age:= 50
+!p11.isDead:= false
+!p11.phase:= phases :: adult
+!p11.maritalStatus:= status :: divorced
+
+!m1:= new Marriage('Angel_Laura')
+!m1.startYear:= 2019
+
+!insert (Angel, Angel_Laura) into maridoDe
+!insert (Laura, Angel_Laura) into mujerDe
+
+!m2:= new Marriage('Pedro_Carmen')
+!m2.startYear:= 2005
+!m2.endYear:=2018
+
+!insert (Pedro, Pedro_Carmen) into maridoDe
+!insert (Carmen, Pedro_Carmen) into mujerDe
+
+!m3:= new Marriage('Juan_lourdes')
+!m2.startYear:= 1980
+!m2.endYear:=2018
+
+!insert (Juan, Juan_lourdes) into maridoDe
+!insert (Lourdes, Juan_lourdes) into mujerDe
+
+!insert (Lucia, Malaga) into pertenece
+!insert (Angel, Malaga) into pertenece
+!insert (Maria, Malaga) into pertenece
+!insert (Antonio, Malaga) into pertenece
+!insert (Ruben, Malaga) into pertenece
+!insert (Pedro, Malaga) into pertenece
+!insert (Jesus, Malaga) into pertenece
+!insert (Laura, Malaga) into pertenece
+!insert (Lourdes, Malaga) into pertenece
+!insert (Juan, Malaga) into pertenece
+!insert (Carmen, Malaga) into pertenece

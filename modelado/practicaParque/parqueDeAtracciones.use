@@ -1,0 +1,13 @@
+model parqueAtracciones
+
+class parqueAtracciones
+end
+
+class CentralReceptora 
+end
+
+class Atraccion 
+end
+
+class Pieza  
+end
