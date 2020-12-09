@@ -20,216 +20,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="90bb59cb-47b1-465a-999e-bd4c0a6e4bc7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/.idea/dictionaries/Javier.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/Ejercicio 2.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/out/production/Ejercicio 2/dataStructures/either/Either.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/out/production/Ejercicio 2/dataStructures/either/Left.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/out/production/Ejercicio 2/dataStructures/either/Right.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/out/production/Ejercicio 2/dataStructures/list/ArrayList$ArrayListIterator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/out/production/Ejercicio 2/dataStructures/list/ArrayList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/out/production/Ejercicio 2/dataStructures/list/LinkedList$LinkedListIterator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/out/production/Ejercicio 2/dataStructures/list/LinkedList$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/out/production/Ejercicio 2/dataStructures/list/LinkedList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/out/production/Ejercicio 2/dataStructures/list/List.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/out/production/Ejercicio 2/dataStructures/list/ListException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/out/production/Ejercicio 2/dataStructures/queue/ArrayQueue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/out/production/Ejercicio 2/dataStructures/queue/EmptyQueueException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/out/production/Ejercicio 2/dataStructures/queue/LinkedListQueue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/out/production/Ejercicio 2/dataStructures/queue/LinkedQueue$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/out/production/Ejercicio 2/dataStructures/queue/LinkedQueue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/out/production/Ejercicio 2/dataStructures/queue/Queue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/out/production/Ejercicio 2/dataStructures/set/LinkedListSet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/out/production/Ejercicio 2/dataStructures/set/Set.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/out/production/Ejercicio 2/dataStructures/set/SortedLinkedSet$LinkedSetIterator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/out/production/Ejercicio 2/dataStructures/set/SortedLinkedSet$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/out/production/Ejercicio 2/dataStructures/set/SortedLinkedSet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/out/production/Ejercicio 2/dataStructures/stack/ArrayStack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/out/production/Ejercicio 2/dataStructures/stack/EmptyStackException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/out/production/Ejercicio 2/dataStructures/stack/LinkedListStack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/out/production/Ejercicio 2/dataStructures/stack/LinkedStack$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/out/production/Ejercicio 2/dataStructures/stack/LinkedStack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/out/production/Ejercicio 2/dataStructures/stack/Stack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/out/production/Ejercicio 2/dataStructures/tuple/Tuple2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/out/production/Ejercicio 2/wellBalanced/WellBalanced.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/src/dataStructures/either/Either.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/src/dataStructures/either/Either.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataStructures/either/Either.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/src/dataStructures/either/Left.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/src/dataStructures/either/Left.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataStructures/either/Left.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/src/dataStructures/either/Right.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/src/dataStructures/either/Right.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataStructures/either/Right.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/src/dataStructures/list/ArrayList$ArrayListIterator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/src/dataStructures/list/ArrayList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/src/dataStructures/list/ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataStructures/list/ArrayList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/src/dataStructures/list/LinkedList$LinkedListIterator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/src/dataStructures/list/LinkedList$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/src/dataStructures/list/LinkedList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/src/dataStructures/list/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataStructures/list/LinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/src/dataStructures/list/List.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/src/dataStructures/list/List.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataStructures/list/List.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/src/dataStructures/list/ListException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/src/dataStructures/list/ListException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataStructures/list/ListException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/src/dataStructures/queue/ArrayQueue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/src/dataStructures/queue/ArrayQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataStructures/queue/ArrayQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/src/dataStructures/queue/EmptyQueueException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/src/dataStructures/queue/EmptyQueueException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataStructures/queue/EmptyQueueException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/src/dataStructures/queue/LinkedListQueue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/src/dataStructures/queue/LinkedListQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataStructures/queue/LinkedListQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/src/dataStructures/queue/LinkedQueue$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/src/dataStructures/queue/LinkedQueue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/src/dataStructures/queue/LinkedQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataStructures/queue/LinkedQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/src/dataStructures/queue/Queue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/src/dataStructures/queue/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataStructures/queue/Queue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/src/dataStructures/set/LinkedListSet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/src/dataStructures/set/LinkedListSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataStructures/set/LinkedListSet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/src/dataStructures/set/Set.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/src/dataStructures/set/Set.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataStructures/set/Set.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/src/dataStructures/set/SortedLinkedSet$LinkedSetIterator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/src/dataStructures/set/SortedLinkedSet$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/src/dataStructures/set/SortedLinkedSet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/src/dataStructures/set/SortedLinkedSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataStructures/set/SortedLinkedSet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/src/dataStructures/stack/ArrayStack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/src/dataStructures/stack/ArrayStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataStructures/stack/ArrayStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/src/dataStructures/stack/EmptyStackException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/src/dataStructures/stack/EmptyStackException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataStructures/stack/EmptyStackException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/src/dataStructures/stack/LinkedListStack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/src/dataStructures/stack/LinkedListStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataStructures/stack/LinkedListStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/src/dataStructures/stack/LinkedStack$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/src/dataStructures/stack/LinkedStack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/src/dataStructures/stack/LinkedStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataStructures/stack/LinkedStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/src/dataStructures/stack/Stack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/src/dataStructures/stack/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataStructures/stack/Stack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/src/dataStructures/tuple/Tuple2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/src/dataStructures/tuple/Tuple2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataStructures/tuple/Tuple2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 2/src/wellBalanced/WellBalanced.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/Ejercicio 3.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/out/production/Ejercicio 3/Add.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/out/production/Ejercicio 3/Data.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/out/production/Ejercicio 3/Dif.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/out/production/Ejercicio 3/Item.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/out/production/Ejercicio 3/META-INF/Ejercicio 3.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/out/production/Ejercicio 3/Mul.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/out/production/Ejercicio 3/Operation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/out/production/Ejercicio 3/PostFix.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/out/production/Ejercicio 3/dataStructures/either/Either.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/out/production/Ejercicio 3/dataStructures/either/Left.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/out/production/Ejercicio 3/dataStructures/either/Right.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/out/production/Ejercicio 3/dataStructures/list/ArrayList$ArrayListIterator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/out/production/Ejercicio 3/dataStructures/list/ArrayList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/out/production/Ejercicio 3/dataStructures/list/LinkedList$LinkedListIterator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/out/production/Ejercicio 3/dataStructures/list/LinkedList$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/out/production/Ejercicio 3/dataStructures/list/LinkedList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/out/production/Ejercicio 3/dataStructures/list/List.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/out/production/Ejercicio 3/dataStructures/list/ListException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/out/production/Ejercicio 3/dataStructures/queue/ArrayQueue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/out/production/Ejercicio 3/dataStructures/queue/EmptyQueueException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/out/production/Ejercicio 3/dataStructures/queue/LinkedListQueue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/out/production/Ejercicio 3/dataStructures/queue/LinkedQueue$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/out/production/Ejercicio 3/dataStructures/queue/LinkedQueue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/out/production/Ejercicio 3/dataStructures/queue/Queue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/out/production/Ejercicio 3/dataStructures/set/LinkedListSet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/out/production/Ejercicio 3/dataStructures/set/Set.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/out/production/Ejercicio 3/dataStructures/set/SortedLinkedSet$LinkedSetIterator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/out/production/Ejercicio 3/dataStructures/set/SortedLinkedSet$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/out/production/Ejercicio 3/dataStructures/set/SortedLinkedSet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/out/production/Ejercicio 3/dataStructures/stack/ArrayStack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/out/production/Ejercicio 3/dataStructures/stack/EmptyStackException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/out/production/Ejercicio 3/dataStructures/stack/LinkedListStack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/out/production/Ejercicio 3/dataStructures/stack/LinkedStack$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/out/production/Ejercicio 3/dataStructures/stack/LinkedStack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/out/production/Ejercicio 3/dataStructures/stack/Stack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/out/production/Ejercicio 3/dataStructures/tuple/Tuple2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/Add.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/Data.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/Dif.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/Item.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/Mul.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/Operation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/PostFix.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/dataStructures/either/Either.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/dataStructures/either/Either.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/dataStructures/either/Left.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/dataStructures/either/Left.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/dataStructures/either/Right.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/dataStructures/either/Right.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/dataStructures/list/ArrayList$ArrayListIterator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/dataStructures/list/ArrayList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/dataStructures/list/ArrayList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/dataStructures/list/LinkedList$LinkedListIterator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/dataStructures/list/LinkedList$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/dataStructures/list/LinkedList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/dataStructures/list/LinkedList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/dataStructures/list/List.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/dataStructures/list/List.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/dataStructures/list/ListException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/dataStructures/list/ListException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/dataStructures/queue/ArrayQueue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/dataStructures/queue/ArrayQueue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/dataStructures/queue/EmptyQueueException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/dataStructures/queue/EmptyQueueException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/dataStructures/queue/LinkedListQueue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/dataStructures/queue/LinkedListQueue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/dataStructures/queue/LinkedQueue$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/dataStructures/queue/LinkedQueue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/dataStructures/queue/LinkedQueue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/dataStructures/queue/Queue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/dataStructures/queue/Queue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/dataStructures/set/LinkedListSet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/dataStructures/set/LinkedListSet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/dataStructures/set/Set.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/dataStructures/set/Set.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/dataStructures/set/SortedLinkedSet$LinkedSetIterator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/dataStructures/set/SortedLinkedSet$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/dataStructures/set/SortedLinkedSet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/dataStructures/set/SortedLinkedSet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/dataStructures/stack/ArrayStack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/dataStructures/stack/ArrayStack.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/dataStructures/stack/EmptyStackException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/dataStructures/stack/EmptyStackException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/dataStructures/stack/LinkedListStack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/dataStructures/stack/LinkedListStack.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/dataStructures/stack/LinkedStack$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/dataStructures/stack/LinkedStack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/dataStructures/stack/LinkedStack.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/dataStructures/stack/Stack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/dataStructures/stack/Stack.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/dataStructures/tuple/Tuple2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejercicio 3/src/dataStructures/tuple/Tuple2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiPropioSet/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiPropioSet/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiPropioSet/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiPropioSet/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiPropioSet/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiPropioSet/MiPropioSet.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiPropioSet/_classpath.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiPropioSet/_project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiPropioSet/bin/dataStructures/set/Set.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiPropioSet/bin/dataStructures/set/SortedLinkedSet$LinkedSetIterator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiPropioSet/bin/dataStructures/set/SortedLinkedSet$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiPropioSet/bin/dataStructures/set/SortedLinkedSet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiPropioSet/bin/demos/set/SetDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiPropioSet/out/production/MiPropioSet/dataStructures/set/Set.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiPropioSet/out/production/MiPropioSet/dataStructures/set/SortedLinkedSet$LinkedSetIterator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiPropioSet/out/production/MiPropioSet/dataStructures/set/SortedLinkedSet$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiPropioSet/out/production/MiPropioSet/dataStructures/set/SortedLinkedSet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiPropioSet/out/production/MiPropioSet/demos/set/SetDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiPropioSet/src/dataStructures/set/Set.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiPropioSet/src/dataStructures/set/SortedLinkedSet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiPropioSet/src/demos/set/SetDemo.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Bag/Bag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Bag/LinkedBag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Bag/PruebaBag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataStructures/queue/TwoStacksQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataStructures/set/ArraySet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataStructures/set/LinkedSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ej3_4/Add.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ej3_4/Data.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ej3_4/Dif.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ej3_4/Infix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ej3_4/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ej3_4/LeftP.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ej3_4/Mul.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ej3_4/Operation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ej3_4/Parentheses.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ej3_4/PostFix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ej3_4/RightP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataStructures/queue/LinkedQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataStructures/queue/LinkedQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wellBalanced/WellBalanced.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/wellBalanced/WellBalanced.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../modelado/practicaParque/parqueDeAtracciones.use" beforeDir="false" afterPath="$PROJECT_DIR$/../../../modelado/practicaParque/parqueDeAtracciones.use" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
@@ -244,24 +68,74 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\amont\Escritorio\universidad\ED\relacion3\Java\src" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
+  <component name="RunManager" selected="Application.PruebaBag">
+    <configuration name="Infix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ej3_4.Infix" />
+      <module name="Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ej3_4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PostFix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ej3_4.PostFix" />
+      <module name="Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ej3_4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PruebaBag" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Bag.PruebaBag" />
+      <module name="Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Bag.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WellBalanced" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="wellBalanced.WellBalanced" />
+      <module name="Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="wellBalanced.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.PruebaBag" />
+        <item itemvalue="Application.Infix" />
+        <item itemvalue="Application.PostFix" />
+        <item itemvalue="Application.WellBalanced" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -271,7 +145,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606778122219</updated>
-      <workItem from="1606778123307" duration="1782000" />
+      <workItem from="1606778123307" duration="36796000" />
+      <workItem from="1607422709798" duration="11525000" />
+      <workItem from="1607511146341" duration="1175000" />
     </task>
     <servers />
   </component>
@@ -288,5 +164,52 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607117711690">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607117711690" />
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1607425794699">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1607425794699" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1607366192223">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607366192223" />
+    <state width="1921" height="356" key="GridCell.Tab.0.bottom" timestamp="1607444858664">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="356" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607444858664" />
+    <state width="1921" height="356" key="GridCell.Tab.0.center" timestamp="1607444858663">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="356" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607444858663" />
+    <state width="1921" height="356" key="GridCell.Tab.0.left" timestamp="1607444858663">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="356" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607444858663" />
+    <state width="1921" height="356" key="GridCell.Tab.0.right" timestamp="1607444858664">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="356" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607444858664" />
+    <state width="1921" height="356" key="GridCell.Tab.1.bottom" timestamp="1607444858664">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="356" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607444858664" />
+    <state width="1921" height="356" key="GridCell.Tab.1.center" timestamp="1607444858664">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="356" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607444858664" />
+    <state width="1921" height="356" key="GridCell.Tab.1.left" timestamp="1607444858664">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="356" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607444858664" />
+    <state width="1921" height="356" key="GridCell.Tab.1.right" timestamp="1607444858664">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="356" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607444858664" />
   </component>
 </project>

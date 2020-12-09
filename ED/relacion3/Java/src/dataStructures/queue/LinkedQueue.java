@@ -22,7 +22,7 @@ public class LinkedQueue<T> implements Queue<T> {
 		}
 	}
 
-	Node<T> first, last;
+	private Node<T> first, last;
 
 	/**
 	 * Creates an empty queue.
