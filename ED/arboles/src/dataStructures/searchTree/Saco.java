@@ -18,7 +18,7 @@ public class Saco<K extends Comparable<? super K>> {
 
     public void insert(K x){
 
-        
+
 
     }
 

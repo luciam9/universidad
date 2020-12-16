@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:MagicDrawProfile="http://UML_Standard_Profile/MagicDraw_Profile/_be00301_1073394351331_445580_2" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/2.0.0/UML" xsi:schemaLocation="http://UML_Standard_Profile/MagicDraw_Profile/_be00301_1073394351331_445580_2 UML_Standard_Profile.MagicDraw_Profile.profile.uml#_1dTkZT1MEeuX19J3tymL-A">
+  <uml:Model xmi:id="eee_1045467100313_135436_1" name="Model" viewpoint="">
+    <ownedComment xmi:id="_18_1beta_8c90288_1415101994820_370998_4336" body="Author:amont.&#xA;Created:05/12/2020 9:24.&#xA;Title:.&#xA;Comment:.&#xA;" annotatedElement="eee_1045467100313_135436_1"/>
+    <packageImport xmi:id="_0primitiveTypesModel">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:id="_0javaPrimitiveTypesModel">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_19_0_4_63b0220_1607156798152_257113_4829" name="Atracción">
+      <ownedAttribute xmi:id="_19_0_4_63b0220_1607160589931_325649_5091" name="vehículo" visibility="private" type="_19_0_4_63b0220_1607157132470_800413_4855" aggregation="composite" association="_19_0_4_63b0220_1607160589931_304099_5090">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_19_0_4_63b0220_1607163076997_495985_5160" name="" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_19_0_4_63b0220_1607163076996_420571_5159" name="" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_19_0_4_63b0220_1607161446300_769286_5131" name="enMarcha" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_19_0_4_63b0220_1607160550348_829325_5079" name="parque" visibility="private" type="_19_0_4_63b0220_1607157455195_93886_4909" association="_19_0_4_63b0220_1607160550347_808466_5077">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_19_0_4_63b0220_1607162539986_438714_5145" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_19_0_4_63b0220_1607162539985_159120_5144" name="" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_19_0_4_63b0220_1607810144427_594281_4949" name="calle" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_19_0_4_63b0220_1607810166623_620716_4951" name="arreglaComponente" visibility="public">
+        <ownedParameter xmi:id="_19_0_4_63b0220_1607810335183_205336_4957" name="s" visibility="public" type="_19_0_4_63b0220_1607809778459_481855_4899"/>
+        <ownedParameter xmi:id="_19_0_4_63b0220_1607810179293_62627_4953" name="" visibility="public" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml#eee_1045467100323_249638_60"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_4_63b0220_1607810186694_728959_4954" name="componenteAveriado" visibility="public">
+        <ownedParameter xmi:id="_19_0_4_63b0220_1607810202197_462202_4956" name="" visibility="public" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml#eee_1045467100323_249638_60"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_19_0_4_63b0220_1607157132470_800413_4855" name="Vehículo">
+      <ownedAttribute xmi:id="_19_0_4_63b0220_1607157199865_806964_4880" name="isAnclado" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_19_0_4_63b0220_1607160589932_660131_5092" name="atracción" visibility="private" type="_19_0_4_63b0220_1607156798152_257113_4829" association="_19_0_4_63b0220_1607160589931_304099_5090">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_19_0_4_63b0220_1607163059434_714292_5154" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_19_0_4_63b0220_1607163059434_591974_5153" name="" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_19_0_4_63b0220_1607808918169_339074_4844" name="detector" visibility="private" type="_19_0_4_63b0220_1607808885074_894739_4814" association="_19_0_4_63b0220_1607808918168_655616_4843">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_19_0_4_63b0220_1607808943509_925735_4858" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_19_0_4_63b0220_1607808943507_586295_4857" name="" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_19_0_4_63b0220_1607809778459_818657_4900" name="" visibility="private" type="_19_0_4_63b0220_1607157289529_220185_4883" association="_19_0_4_63b0220_1607809778459_481855_4899"/>
+      <ownedOperation xmi:id="_19_0_4_63b0220_1607810349060_428269_4958" name="vehiculoRoto" visibility="public">
+        <ownedParameter xmi:id="_19_0_4_63b0220_1607810367309_755698_4960" name="" visibility="public" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml#eee_1045467100323_249638_60"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_4_63b0220_1607810370801_841672_4961" name="solicitudEnEspera" visibility="public">
+        <ownedParameter xmi:id="_19_0_4_63b0220_1607810441398_829341_4967" name="solicitud" visibility="public" type="_19_0_4_63b0220_1607809778459_481855_4899"/>
+        <ownedParameter xmi:id="_19_0_4_63b0220_1607810391176_221112_4963" name="" visibility="public" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml#eee_1045467100323_249638_60"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_4_63b0220_1607810394677_169045_4964" name="arreglaVehiculo" visibility="public">
+        <ownedParameter xmi:id="_19_0_4_63b0220_1607810461007_997887_4968" name="s" visibility="public" type="_19_0_4_63b0220_1607809778459_481855_4899"/>
+        <ownedParameter xmi:id="_19_0_4_63b0220_1607810416838_765480_4966" name="" visibility="public" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml#eee_1045467100323_249638_60"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_19_0_4_63b0220_1607157289529_220185_4883" name="CentralReceptoraAverias">
+      <ownedAttribute xmi:id="_19_0_4_63b0220_1607163809475_393467_5237" name="receptor" visibility="private" type="_19_0_4_63b0220_1607158546475_214072_4962" association="_19_0_4_63b0220_1607163809474_405274_5236">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_19_0_4_63b0220_1607167869719_872509_5444" name="" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_19_0_4_63b0220_1607167869719_733852_5443" name=""/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_19_0_4_63b0220_1607165067319_791000_5322" name="parquedueño" visibility="private" type="_19_0_4_63b0220_1607157455195_93886_4909" association="_19_0_4_63b0220_1607165067319_559802_5320">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_19_0_4_63b0220_1607165694008_998561_5341" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_19_0_4_63b0220_1607165694007_256216_5340" name="" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_19_0_4_63b0220_1607167775539_628189_5430" name="encontrado" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_19_0_4_63b0220_1607809212895_384814_4873" name="cra" visibility="private" type="_19_0_4_63b0220_1607157740515_930701_4935" association="_19_0_4_63b0220_1607809212894_777728_4871">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_19_0_4_63b0220_1607809453751_55780_4886" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_19_0_4_63b0220_1607809453750_989377_4885" name="" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_19_0_4_63b0220_1607809778460_919063_4901" name="" visibility="private" type="_19_0_4_63b0220_1607157132470_800413_4855" association="_19_0_4_63b0220_1607809778459_481855_4899"/>
+      <ownedOperation xmi:id="_19_0_4_63b0220_1607810065684_347444_4938" name="averiaDetectada" visibility="public">
+        <ownedParameter xmi:id="_19_0_4_63b0220_1607810118586_735440_4944" name="v" visibility="public" type="_19_0_4_63b0220_1607810118610_366201_4945"/>
+        <ownedParameter xmi:id="_19_0_4_63b0220_1607810118612_756676_4946" name="a" visibility="public" type="_19_0_4_63b0220_1607810118617_278429_4947"/>
+        <ownedParameter xmi:id="_19_0_4_63b0220_1607810078496_329191_4940" name="" visibility="public" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml#eee_1045467100323_249638_60"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_4_63b0220_1607810081951_120620_4941" name="averiaArreglada" visibility="public">
+        <ownedParameter xmi:id="_19_0_4_63b0220_1607810130774_246552_4948" name="s" visibility="public" type="_19_0_4_63b0220_1607809778459_481855_4899"/>
+        <ownedParameter xmi:id="_19_0_4_63b0220_1607810092569_496487_4943" name="" visibility="public" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml#eee_1045467100323_249638_60"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_19_0_4_63b0220_1607157455195_93886_4909" name="ParqueAtracciones">
+      <ownedAttribute xmi:id="_19_0_4_63b0220_1607160550348_951518_5078" name="atracción" visibility="private" type="_19_0_4_63b0220_1607156798152_257113_4829" aggregation="composite" association="_19_0_4_63b0220_1607160550347_808466_5077">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_19_0_4_63b0220_1607162532052_778234_5141" name="" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_19_0_4_63b0220_1607162532050_365214_5140" name=""/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_19_0_4_63b0220_1607165067319_782157_5321" name="central" visibility="private" type="_19_0_4_63b0220_1607157289529_220185_4883" association="_19_0_4_63b0220_1607165067319_559802_5320">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_19_0_4_63b0220_1607165411248_501425_5335" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_19_0_4_63b0220_1607165411247_427195_5334" name="" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_19_0_4_63b0220_1607157740515_930701_4935" name="Operario">
+      <ownedAttribute xmi:id="_19_0_4_63b0220_1607163094027_74317_5168" name="pertenencia" visibility="private" type="_19_0_4_63b0220_1607158546475_214072_4962" association="_19_0_4_63b0220_1607163094027_846336_5167">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_19_0_4_63b0220_1607163774904_605131_5212" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_19_0_4_63b0220_1607163774904_684405_5211" name="" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_19_0_4_63b0220_1607165754669_183017_5349" name="arreglada" visibility="private" type="_19_0_4_63b0220_1607809778459_481855_4899" association="_19_0_4_63b0220_1607165754669_445724_5348">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_19_0_4_63b0220_1607166134284_269824_5367" name="" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_19_0_4_63b0220_1607166134284_327367_5366" name=""/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_19_0_4_63b0220_1607809212894_261884_4872" name="operario" visibility="private" type="_19_0_4_63b0220_1607157289529_220185_4883" association="_19_0_4_63b0220_1607809212894_777728_4871">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_19_0_4_63b0220_1607809465170_777936_4892" name="" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_19_0_4_63b0220_1607809465170_468058_4891" name=""/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_19_0_4_63b0220_1607810675483_204372_4969" name="operarioOcupado" visibility="public">
+        <ownedParameter xmi:id="_19_0_4_63b0220_1607810686009_299935_4971" name="" visibility="public" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml#eee_1045467100323_249638_60"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_4_63b0220_1607810695036_296317_4972" name="finalizarReparacion" visibility="public">
+        <ownedParameter xmi:id="_19_0_4_63b0220_1607810707045_351425_4974" name="" visibility="public" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml#eee_1045467100323_249638_60"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_19_0_4_63b0220_1607158546475_214072_4962" name="DispositivoOperario">
+      <ownedAttribute xmi:id="_19_0_4_63b0220_1607160456481_80205_5071" name="nAvisos" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_19_0_4_63b0220_1607161389464_352236_5129" name="isOcupado" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_19_0_4_63b0220_1607163094027_241209_5169" name="dueño" visibility="private" type="_19_0_4_63b0220_1607157740515_930701_4935" association="_19_0_4_63b0220_1607163094027_846336_5167">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_19_0_4_63b0220_1607163780157_41937_5216" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_19_0_4_63b0220_1607163780157_900023_5215" name="" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_19_0_4_63b0220_1607163795423_337233_5225" name="contenido" visibility="private" type="_19_0_4_63b0220_1607161234040_556255_5100" association="_19_0_4_63b0220_1607163795423_850504_5223">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_19_0_4_63b0220_1607164018921_28939_5257" name="" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_19_0_4_63b0220_1607164018920_199603_5256" name=""/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_19_0_4_63b0220_1607163809475_295423_5238" name="emisor" visibility="private" type="_19_0_4_63b0220_1607157289529_220185_4883" association="_19_0_4_63b0220_1607163809474_405274_5236">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_19_0_4_63b0220_1607167837586_974959_5438" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_19_0_4_63b0220_1607167837585_341311_5437" name="" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_19_0_4_63b0220_1607810782876_193685_4975" name="enviaIncidencia" visibility="private"/>
+      <ownedOperation xmi:id="_19_0_4_63b0220_1607810805890_667755_4977" name="enviaIncidencia" visibility="public">
+        <ownedParameter xmi:id="_19_0_4_63b0220_1607810897308_107300_4983" name="calle" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_4_63b0220_1607810897311_53848_4984" name="nVehiculo" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_19_0_4_63b0220_1607810817336_98361_4979" name="" visibility="public" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml#eee_1045467100323_249638_60"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_19_0_4_63b0220_1607810819715_720435_4980" name="incidenciaResuelta" visibility="public">
+        <ownedParameter xmi:id="_19_0_4_63b0220_1607810907006_211928_4985" name="s" visibility="public" type="_19_0_4_63b0220_1607809778459_481855_4899"/>
+        <ownedParameter xmi:id="_19_0_4_63b0220_1607810873841_450178_4982" name="" visibility="public" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml#eee_1045467100323_249638_60"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_19_0_4_63b0220_1607159128314_625606_4988" name="SolicitudRevision">
+      <ownedAttribute xmi:id="_19_0_4_63b0220_1607166928982_147277_5400" name="estado" visibility="private" type="_19_0_4_63b0220_1607166820784_743143_5373"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_19_0_4_63b0220_1607160073539_787855_5014" name="SolicitudAtendida">
+      <generalization xmi:id="_19_0_4_63b0220_1607160274694_593981_5067" isSubstitutable="true" general="_19_0_4_63b0220_1607159128314_625606_4988"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_19_0_4_63b0220_1607160079629_722902_5040" name="SolicitudEsperando">
+      <generalization xmi:id="_19_0_4_63b0220_1607160281153_52964_5070" isSubstitutable="true" general="_19_0_4_63b0220_1607159128314_625606_4988"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_19_0_4_63b0220_1607160550347_808466_5077" name="Contiene" memberEnd="_19_0_4_63b0220_1607160550348_951518_5078 _19_0_4_63b0220_1607160550348_829325_5079"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_19_0_4_63b0220_1607160589931_304099_5090" name="Compuesta por" memberEnd="_19_0_4_63b0220_1607160589931_325649_5091 _19_0_4_63b0220_1607160589932_660131_5092"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_19_0_4_63b0220_1607161234040_556255_5100" name="Mensaje">
+      <ownedAttribute xmi:id="_19_0_4_63b0220_1607161282210_139735_5125" name="calle" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_19_0_4_63b0220_1607161295347_632969_5127" name="nVehiculo" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_19_0_4_63b0220_1607163795423_322489_5224" name="receptor" visibility="private" type="_19_0_4_63b0220_1607158546475_214072_4962" association="_19_0_4_63b0220_1607163795423_850504_5223">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_19_0_4_63b0220_1607164002857_208157_5251" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_19_0_4_63b0220_1607164002857_661720_5250" name="" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_19_0_4_63b0220_1607163094027_846336_5167" name="EsDueño" memberEnd="_19_0_4_63b0220_1607163094027_74317_5168 _19_0_4_63b0220_1607163094027_241209_5169"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_19_0_4_63b0220_1607163795423_850504_5223" name="Recibe" memberEnd="_19_0_4_63b0220_1607163795423_322489_5224 _19_0_4_63b0220_1607163795423_337233_5225"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_19_0_4_63b0220_1607163809474_405274_5236" name="Envía" memberEnd="_19_0_4_63b0220_1607163809475_393467_5237 _19_0_4_63b0220_1607163809475_295423_5238"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_19_0_4_63b0220_1607165067319_559802_5320" name="Posee" memberEnd="_19_0_4_63b0220_1607165067319_782157_5321 _19_0_4_63b0220_1607165067319_791000_5322"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_19_0_4_63b0220_1607165754669_445724_5348" name="Atiende" memberEnd="_19_0_4_63b0220_1607165754669_183017_5349 _19_0_4_63b0220_1607165754669_972467_5350"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_19_0_4_63b0220_1607166820784_743143_5373" name="Estado">
+      <ownedAttribute xmi:id="_19_0_4_63b0220_1607166842206_251727_5395" name="esperando" visibility="private" isReadOnly="true"/>
+      <ownedLiteral xmi:id="_19_0_4_63b0220_1607166875101_179045_5396" name="esperando" classifier="_19_0_4_63b0220_1607166820784_743143_5373"/>
+      <ownedLiteral xmi:id="_19_0_4_63b0220_1607166884978_540722_5398" name="atendida" classifier="_19_0_4_63b0220_1607166820784_743143_5373"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_19_0_4_63b0220_1607808885074_894739_4814" name="Detector">
+      <ownedAttribute xmi:id="_19_0_4_63b0220_1607808918169_718111_4845" name="vehiculo" visibility="private" type="_19_0_4_63b0220_1607157132470_800413_4855" association="_19_0_4_63b0220_1607808918168_655616_4843">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_19_0_4_63b0220_1607808952492_434369_4864" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_19_0_4_63b0220_1607808952492_593241_4863" name="" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_19_0_4_63b0220_1607808918168_655616_4843" name="Tiene" memberEnd="_19_0_4_63b0220_1607808918169_339074_4844 _19_0_4_63b0220_1607808918169_718111_4845"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_19_0_4_63b0220_1607809212894_777728_4871" name="Trabaja en" memberEnd="_19_0_4_63b0220_1607809212894_261884_4872 _19_0_4_63b0220_1607809212895_384814_4873"/>
+    <packagedElement xmi:type="uml:AssociationClass" xmi:id="_19_0_4_63b0220_1607809778459_481855_4899" name="Solicitud" memberEnd="_19_0_4_63b0220_1607809778459_818657_4900 _19_0_4_63b0220_1607809778460_919063_4901">
+      <ownedAttribute xmi:id="_19_0_4_63b0220_1607165754669_972467_5350" name="técnico" visibility="private" type="_19_0_4_63b0220_1607157740515_930701_4935" association="_19_0_4_63b0220_1607165754669_445724_5348">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_19_0_4_63b0220_1607166126706_113147_5363" name="" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_19_0_4_63b0220_1607166126706_863943_5362" name="" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_19_0_4_63b0220_1607809827137_43621_4936" name="enEspera" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_19_0_4_63b0220_1607810118610_366201_4945" name="Vehiculo"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_19_0_4_63b0220_1607810118617_278429_4947" name="Atraccion"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="magicdraw_uml_standard_profile_v_0001" name="UML Standard Profile">
+      <ownedComment xmi:id="_be00301_1078843546940_242228_131" body="UML Standard Profile contains a UML metamodel (metaclasses without properties and associations), Standard UML stereotypes defined in the annex C of UML specification, validation suites for UML model correctness and completeness checking, and stereotypes used by MagicDraw internally." annotatedElement="magicdraw_uml_standard_profile_v_0001"/>
+    </packagedElement>
+    <profileApplication xmi:id="_be00301_1073394351331_445580_2profileApplicationModel">
+      <eAnnotations xmi:id="_1dZrmj1MEeuX19J3tymL-A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="UML_Standard_Profile.MagicDraw_Profile.profile.uml#_1dTkZT1MEeuX19J3tymL-A"/>
+      </eAnnotations>
+      <appliedProfile href="UML_Standard_Profile.MagicDraw_Profile.profile.uml#_be00301_1073394351331_445580_2"/>
+    </profileApplication>
+    <profileApplication xmi:id="_11_5_f720368_1159529670215_231387_1profileApplicationModel">
+      <eAnnotations xmi:id="_1da5AT1MEeuX19J3tymL-A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="UML_Standard_Profile.Validation_Profile.profile.uml#_1dJzvD1MEeuX19J3tymL-A"/>
+      </eAnnotations>
+      <appliedProfile href="UML_Standard_Profile.Validation_Profile.profile.uml#_11_5_f720368_1159529670215_231387_1"/>
+    </profileApplication>
+    <profileApplication xmi:id="_19_0beta_8bb027e_1484121177637_661582_4502profileApplicationModel">
+      <eAnnotations xmi:id="_1dcHIT1MEeuX19J3tymL-A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="UML_Standard_Profile.MagicDraw_Profile.Find_By_Text.profile.uml#_1dYdvz1MEeuX19J3tymL-A"/>
+      </eAnnotations>
+      <appliedProfile href="UML_Standard_Profile.MagicDraw_Profile.Find_By_Text.profile.uml#_19_0beta_8bb027e_1484121177637_661582_4502"/>
+    </profileApplication>
+    <profileApplication xmi:id="_9_0_be00301_1108050582343_527400_10847profileApplicationModel">
+      <eAnnotations xmi:id="_1ddVQT1MEeuX19J3tymL-A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="UML_Standard_Profile.StandardProfile.profile.uml#_1dYdzT1MEeuX19J3tymL-A"/>
+      </eAnnotations>
+      <appliedProfile href="UML_Standard_Profile.StandardProfile.profile.uml#_9_0_be00301_1108050582343_527400_10847"/>
+    </profileApplication>
+    <profileApplication xmi:id="_11_5_be00301_1153310565718_226811_161profileApplicationModel">
+      <eAnnotations xmi:id="_1dejYT1MEeuX19J3tymL-A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="UML_Standard_Profile.MagicDraw_Profile.DSL_Customization.profile.uml#_1dYd0z1MEeuX19J3tymL-A"/>
+      </eAnnotations>
+      <appliedProfile href="UML_Standard_Profile.MagicDraw_Profile.DSL_Customization.profile.uml#_11_5_be00301_1153310565718_226811_161"/>
+    </profileApplication>
+    <profileApplication xmi:id="_16_6_8f90291_1254846042821_86742_517profileApplicationModel">
+      <eAnnotations xmi:id="_1dfxgT1MEeuX19J3tymL-A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="UML_Standard_Profile.MagicDraw_Profile.Traceability_customization.profile.uml#_1dYdCT1MEeuX19J3tymL-A"/>
+      </eAnnotations>
+      <appliedProfile href="UML_Standard_Profile.MagicDraw_Profile.Traceability_customization.profile.uml#_16_6_8f90291_1254846042821_86742_517"/>
+    </profileApplication>
+    <profileApplication xmi:id="_17_0_4beta_8ca0285_1361349406965_180847_3086profileApplicationModel">
+      <eAnnotations xmi:id="_1dg_oD1MEeuX19J3tymL-A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="UML_Standard_Profile.Dependency_Matrix_Profile.profile.uml#_1dJMMj1MEeuX19J3tymL-A"/>
+      </eAnnotations>
+      <appliedProfile href="UML_Standard_Profile.Dependency_Matrix_Profile.profile.uml#_17_0_4beta_8ca0285_1361349406965_180847_3086"/>
+    </profileApplication>
+  </uml:Model>
+  <MagicDrawProfile:auxiliaryResource xmi:id="_1d0hoD1MEeuX19J3tymL-A" base_Element="magicdraw_uml_standard_profile_v_0001"/>
+</xmi:XMI>

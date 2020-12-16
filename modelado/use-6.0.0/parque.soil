@@ -1,0 +1,65 @@
+reset
+
+!new ParqueAtracciones('Divertimento')
+!new CentralReceptoraAverias('DivertimentoCRA')
+!insert(Divertimento, DivertimentoCRA) into Posee
+!new Atraccion('Noria')
+!Noria.numeroCalle := 1
+!insert(Divertimento, Noria) into Contiene
+!new Vehiculo('V1')
+!V1.numero := 1
+!insert(Noria, V1) into CompuestaPor
+!new Detector('D')
+!insert(D, V1) into Tiene
+!new Vehiculo('V2')
+!V2.numero := 2
+!insert(Noria, V2) into CompuestaPor
+!new Detector('DV2')
+!insert(DV2,V2) into Tiene
+!new Vehiculo('V3')
+'V3'.numero := 3
+!insert(Noria,'V3') into CompuestaPorPor
+!new Detector('DV3')
+!insert(DV3, V3) into Tiene
+!new Vehiculo('V4')
+!V4.numero := 4
+!insert(Noria, V4) into CompuestaPor
+!new Detector('DV4')
+!insert(DV4,V4) into Tiene
+!new Atraccion('MontanyaRusa')
+!MontanyaRusa.numeroCalle := 2
+!insert(Divertimento,MontanyaRusa) into Contiene
+!new Vehiculo('Va1')
+!Va1.numero := 1
+!insert(MontanyaRusa,Va1) into CompuestaPor
+!new Detector('DVa1')
+!insert(DVa1,Va1) into Tiene
+!new Vehiculo('Va2')
+!Va2.numero := 2
+!insert(MontanyaRusa,Va2) into CompuestaPor
+!new Detector('DVa2')
+!insert(DVa2,Va2) into Tiene
+!new Vehiculo('Va3')
+!Va3.numero := 3
+!insert(MontanyaRusa,Va3) into CompuestaPor
+!new Detector('DVa3')
+!insert(DVa3,Va3) into Tiene
+!new Vehiculo('Va4')
+!Va4.numero := 4
+!insert(MontanyaRusa,Va4) into CompuestaPor
+!new Detector('DVa4')
+!insert(DVa4,Va4) into Tiene
+
+!new Operario('Lucia')
+!insert(DivertimentoCRA,Lucia) into TrabajaEn
+!new Operario('Juan')
+!insert(DivertimentoCRA,Juan) into TrabajaEn
+!new Operario('Carlos')
+!insert(DivertimentoCRA,Carlos) into TrabajaEn
+!new Dispositivo('D1')
+!insert(Lucia,D1) into EsDuenyo
+!new Dispositivo('D2')
+!insert(Juan,D2) into EsDuenyo
+!new Dispositivo('D3')
+!insert(Carlos,D3) into EsDuenyo
+

@@ -4,36 +4,221 @@ class ParqueAtracciones
 end
 
 class CentralReceptoraAverias 
+    operations
+    averiaDetectada(v: Vehiculo, a: Atraccion)
+        begin
+            declare s: Solicitud, op: Operario;
+            if v.solicitud -> isEmpty() then
+                s := new Solicitud between (v, self);
+                if self.operario->select(op | op.dispositivo.disponible)->notEmpty() then
+                op := self.operario->any(op | op.dispositivo.disponible);
+                op.dispositivo.enviaIncidencia(a.calle, v.numero);
+            else
+                v.solicitudEnEspera(s);
+            end
+        else
+            s := v.solicitud;
+            if self.operario->select(op | op.dispositivo.disponible)->notEmpty() then
+                op := self.operario->any(op | op.dispositivo.disponible);
+                op.dispositivo.enviaIncidencia(a.calle, v.numero);
+            end
+        end
+    end
+    pre atraccionContieneVehiculo: a.vehiculo->includes(v)
+    pre mismoParque: a.parque = self.parque
+    post incrementoSolicitudes: Solicitud.allInstances->select(so | so.oclIsNew())->notEmpty() implies
+     Solicitud.allInstances->size() = Solicitud.allInstances@pre->size() + 1
+
+    averiaArreglada(s : Solicitud)
+        begin
+            destroy(s)
+        end
+        pre existeAveria: self.parque.atraccion.vehiculo -> collect(solicitud)->includes(s)
+        post sinSolicitud: (self.vehiculo->select(v | v.solicitud->notEmpty())->size() =
+        self.vehiculo->select(v | v.solicitud@pre->notEmpty())->size() - 1)
+
 end
 
 class Atraccion 
     attributes
     enMarcha : Boolean
+    calle : Integer
+
+    operations 
+    arreglaComponente(s : Solicitud)
+    begin
+        destroy(s);
+    end
+    pre hayAveria: self.vehiculo->collect(solicitud)->includes(s) and not self.enMarcha
+    post sinAveria:
+        (self.vehiculo->select(v | v.solicitud->notEmpty())->size() =
+        self.vehiculo->select(v | v.solicitud@pre->notEmpty())->size() - 1) and self.enMarcha
+    
+    componenteAveriado() 
+    begin
+    end
+    pre existeSolicitud: self.vehiculo->exists(v | v.solicitud->notEmpty())
+
+    statemachines
+        psm EstadoAtraccion
+            states 
+                s: initial
+                Funcionando
+                Esperando 
+            transitions
+            s -> Funcionando
+            Funcionando -> Esperando {componenteAveriado()}
+            Esperando -> Esperando {[self.vehiculo -> select(v : Vehiculo | v.solicitud -> notEmpty()) -> size > 1] arreglaComponente()}
+            Esperando -> Funcionando {[self.vehiculo -> select (v | v.solicitud -> notEmpty()) -> size() = 1] arreglaComponente()}
+
+        end
+
 end
 
 class Vehiculo
     attributes
     isAnclado : Boolean
+    numero : Integer
+
+    operations
+    vehiculoRoto()
+        begin
+            self.atraccion.parque.central.averiaDetectada(self, self.atraccion);
+            self.atraccion.componenteAveriado();
+    end
+
+    solicitudEnEspera(solicitud: Solicitud)
+    begin
+        while (solicitud.enEspera) do
+            self.atraccion.parque.central.averiaDetectada(self, self.atraccion);
+        end
+    end
+    pre haySolicitud: self.solicitud ->notEmpty()
+
+    arreglaVehiculo(s: Solicitud)
+    begin
+        self.atraccion.arreglaComponente(s);
+    end
+    pre existeSolicitud: self.solicitud->notEmpty
+    pre averiaAtendida: not self.solicitud.enEspera
+    post solicitudEliminada: self.solicitud->isEmpty() and Solicitud.allInstances->excludes(s)
+
+    statemachines
+        psm EstadoVehiculo
+            states
+                s: initial 
+                Funcionando
+                Averiado
+            transitions
+                s -> Funcionando
+                Funcionando -> Averiado {vehiculoRoto()}
+                Averiado -> Funcionando {arreglaVehiculo()}
+        end
 end
 
-class SolicitudRevision
+class Detector
+end 
+
+associationclass Solicitud between
+    Vehiculo [*] role vehiculo
+    CentralReceptoraAverias [0..1] role cra 
+
+    attributes
+    enEspera : Boolean
+
+    operations
+    reparar()
+    begin
+    end
+    pre existeOperarioAtendiendo: not self.enEspera
+
+    statemachines
+        psm EstadoSolicitud
+            states
+                s: initial
+                Pendiente
+                EnReparacion
+            transitions
+                s -> Pendiente
+                Pendiente -> EnReparacion {reparar()}
+        end
+
+
 end
 
-enum estado {esperando, atendida}
 
 class Operario
+
+    operations
+    operarioOcupado()
+    begin
+        self.arreglada.reparar();
+    end
+    pre existeSolicitud: self.arreglada->notEmpty()
+
+    finalizarReparacion()
+    begin
+        self.dispositivo.incidenciaResuelta(self.arreglada);
+    end
+    pre ocupado: not self.dispositivo.disponible
+    post operarioLibre: self.dispositivo.disponible
+
+    statemachines
+        psm EstadoOperario
+            states
+                s: initial
+                Libre 
+                Ocupado 
+
+            transitions
+                s -> Libre
+                Libre -> Ocupado {operarioOcupado()}
+                Ocupado -> Libre {finalizarReparacion()}
+        end
+
 end 
 
 class DispositivoOperario
     attributes
     nAvisos : Integer
-    isOcupado : Integer
+    disponible : Boolean
+
+    operations
+    enviaIncidencia(calle: Integer, nVehiculo: Integer)
+    begin
+        declare s : Solicitud;
+        s := Solicitud.allInstances->select(s | s.vehiculo.numero = nVehiculo
+            and s.vehiculo.atraccion.calle = calle)->asSequence()->first();
+        insert (self.duenyo, s) into Atiende;
+        self.duenyo.operarioOcupado();
+    end
+    pre solicitudEnviada: Solicitud.allInstances->collect(vehiculo)->asSet()
+                        ->exists(v | v.numero = nVehiculo and v.atraccion.calle = calle)
+    post trabajadorOcupado: let s: Solicitud = Solicitud.allInstances->
+                        select(s | s.vehiculo.numero = nVehiculo
+                        and s.vehiculo.atraccion.calle = calle and
+                        self.duenyo.cra.parque.atraccion->includes(s.vehiculo.atraccion))
+                        ->asSequence()->first() in
+                        not self.disponible and self.duenyo.arreglada = s
+    
+    incidenciaResuelta(s : Solicitud)
+    begin
+        declare cra: CentralReceptoraAverias;
+        cra := self.duenyo.cra;
+        cra.averiaArreglada(s);
+        self.nAvisos := self.nAvisos + 1;
+    end
+    pre trabajadorOcupado: not self.disponible
+    pre trabajadorAtiendeAveria: self.duenyo.arreglada = s
+    post averiasResueltasIncrementada: self.nAvisos = self.nAvisos@pre + 1
+    post trabajadorLibre: self.disponible
+
+
 end
 
-class Mensaje 
-    attributes
-    calle : Integer
-    nVehiculo : Integer
+association Tiene between
+    Vehiculo [1] role vehiculo
+    Detector [1] role detector
 end
 
 composition Contiene between
@@ -41,53 +226,45 @@ composition Contiene between
     Atraccion [*] role atraccion 
 end
 
+association Posee between
+    ParqueAtracciones [1] role parque
+    CentralReceptoraAverias [1] role central 
+end
+
 composition CompuestaPor between
     Atraccion [1] role atraccion
-    Vehiculo [1..*] role Vehiculo
-end
-
-association Envia between 
-    Vehiculo [1] role informante
-    SolicitudRevision [*] role informacion
-end
-
-association AvisaCRA between 
-    SolicitudRevision [*] role solicitud 
-    CentralReceptoraAverias [1] role receptora 
-end
-
-association AvisaVehiculo between
-    SolicitudRevision [*] role estado
-    CentralReceptoraAverias [1] role avisor
-end
-
-association AvisaAtraccion between
-    Atraccion [1] role fallo
-    SolicitudRevision [*] role aviso
+    Vehiculo [1..*] role vehiculo
 end
 
 association Envia between
-    Mensaje [*] role contenido
+    DispositivoOperario [*] role receptor
     CentralReceptoraAverias [1] role emisor
 end
 
-association BuscaOperario between
-    CentralReceptoraAverias [1] role EncargadoBusqueda
-    DispositivoOperario [*] role buscado
+association TrabajaEn between
+    Operario [*] role operario 
+    CentralReceptoraAverias [1] role cra
 end
 
-association Recibe between
-    Mensaje [*] role contenido
-    DispositivoOperario [1] role receptora
-end
 
-association Posee between 
-    DispositivoOperario [1] role pertenencia
-    Operario [1] role dueño
+association EsDuenyo between 
+    DispositivoOperario [1] role dispositivo
+    Operario [1] role duenyo
 end
 
 association Atiende between 
-    Operario [1] role tecnico
-    SolicitudRevision [*] role arreglada
+    Operario [0..1] role tecnico
+    Solicitud [0..1] role arreglada
 end
+
+constraints
+
+--el operario que atiende la seria trabaja en la cra a la que se asigna
+context Solicitud inv OperarioTrabajaCRA: self.tecnico.cra = self.cra
+
+context Solicitud inv CRAVehiculoIgualseria: self.cra = self.vehiculo.atraccion.parque
+
+context Atraccion inv nCalleDefinido: not self.calle.oclIsUndefined()
+
+context Vehiculo inv nVehiculoDefinido: not self.numero.oclIsUndefined()
 

@@ -1,0 +1,16 @@
+step on
+
+!V1.vehiculoRoto()
+!Va1.vehiculoRoto()
+
+
+!Lucia.finalizarReparacion()
+
+
+-- Dos averias mas
+!V3.vehiculoRoto()
+
+-- Se arreglan todas las averias
+!Carlos.finalizarReparacion()
+!Juan.finalizarReparacion()
+
