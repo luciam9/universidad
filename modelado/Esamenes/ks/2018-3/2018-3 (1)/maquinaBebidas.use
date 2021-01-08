@@ -1,0 +1,92 @@
+model MaquinaBebidas
+
+class Bebida
+attributes
+    numero: Integer
+    precio: Real
+end
+
+class Maquina
+attributes
+    saldo: Real init: 0
+    numeroBebidaSeleccionada: Integer init: -1
+operations
+    seleccionar(numero: Integer)
+    begin
+        if self.bebidas->select(b | b.numero = numero)->size() > 0 then
+            if self.seleccionado->size() > 0 and self.bebidas->select(b | b.numero = numero)->size() > 0 then
+                delete (self, self.seleccionado) from Seleccionado;
+                self.numeroBebidaSeleccionada := numero;
+                insert(self, self.bebidas->select(b | b.numero = numero)->asSequence()->first()) into Seleccionado;
+            else
+                self.numeroBebidaSeleccionada := numero;
+                insert(self, self.bebidas->select(b | b.numero = numero)->asSequence()->first()) into Seleccionado;
+            end
+        else
+            self.numeroBebidaSeleccionada := -1
+        end
+    end
+    cancelar()
+    begin
+        self.saldo := 0;
+        delete (self, self.seleccionado) from Seleccionado;
+        self.numeroBebidaSeleccionada := -1;
+    end
+    insertarSaldo(cantidad: Real)
+    begin
+        self.saldo := self.saldo + cantidad;
+    end
+    confirmar()
+    begin
+        if self.numeroBebidaSeleccionada <> -1 and self.saldo >= self.seleccionado.precio then
+            self.saldo := self.saldo - self.seleccionado.precio;
+            delete (self, self.seleccionado) from contiene;
+            delete (self, self.seleccionado) from Seleccionado;
+        else
+            self.saldo := self.saldo
+        end
+    end
+statemachines
+    psm Proceso
+        states
+            s: initial
+            Esperando
+            MostrarPrecio
+            NoQuedan
+            SaldoInsuficiente
+            Servir
+            ProcesoFinalizado: final
+        transitions
+            s -> Esperando
+            Esperando -> MostrarPrecio {[self.saldo = 0 and self.numeroBebidaSeleccionada <> -1] confirmar()}
+            Esperando -> NoQuedan {[self.numeroBebidaSeleccionada = -1] confirmar()}
+            Esperando -> SaldoInsuficiente {[self.saldo < self.seleccionado.precio and self.saldo <> 0] confirmar()} 
+            Esperando -> Servir {[self.saldo >= self.seleccionado.precio] confirmar()}
+            MostrarPrecio -> MostrarPrecio {[self.saldo = 0 and self.numeroBebidaSeleccionada <> -1] confirmar()}
+            MostrarPrecio -> NoQuedan {[self.numeroBebidaSeleccionada = -1] confirmar()}
+            MostrarPrecio -> Servir {[self.saldo >= self.seleccionado.precio] confirmar()}
+            MostrarPrecio -> SaldoInsuficiente {[self.saldo < self.seleccionado.precio and self.saldo <> 0] confirmar()} 
+            MostrarPrecio -> ProcesoFinalizado {cancelar()}
+            NoQuedan -> NoQuedan {[self.numeroBebidaSeleccionada = -1] confirmar()}
+            NoQuedan -> SaldoInsuficiente {[self.saldo < self.seleccionado.precio and self.saldo <> 0] confirmar()} 
+            NoQuedan -> Servir {[self.saldo >= self.seleccionado.precio] confirmar()}
+            NoQuedan -> ProcesoFinalizado {cancelar()}
+            NoQuedan -> MostrarPrecio {[self.saldo = 0 and self.numeroBebidaSeleccionada <> -1] confirmar()}
+            SaldoInsuficiente -> Servir {[self.saldo >= self.seleccionado.precio] confirmar()}
+            SaldoInsuficiente -> NoQuedan {[self.numeroBebidaSeleccionada = -1] confirmar()}
+            SaldoInsuficiente -> ProcesoFinalizado {cancelar()}
+            SaldoInsuficiente -> SaldoInsuficiente {[self.saldo < self.seleccionado.precio and self.saldo <> 0] confirmar()} 
+            Servir -> Esperando
+            Esperando -> ProcesoFinalizado {cancelar()}
+    end
+end
+
+association Seleccionado between
+Maquina [0..1] role seleccionadoMaquina
+Bebida [0..1] role seleccionado
+end
+
+association contiene between
+Maquina [1] role maquina
+Bebida [*] role bebidas
+end

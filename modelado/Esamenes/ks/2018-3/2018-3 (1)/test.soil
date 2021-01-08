@@ -1,0 +1,13 @@
+!new Maquina('m')
+!new Bebida('b1')
+!new Bebida('b2')
+!new Bebida('b3')
+!b1.numero := 1
+!b2.numero := 2
+!b3.numero := 3
+!b1.precio := 1.05
+!b2.precio := 1.10
+!b3.precio := 1.15
+!insert(m, b1) into contiene
+!insert(m, b2) into contiene
+!insert(m, b3) into contiene

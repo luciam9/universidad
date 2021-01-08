@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3b2f349a-1003-4a9b-bb88-dd25b1d296a0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ED.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../arboles/src/Ej11/TuplaGenerica.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../arboles/src/Ej12/Diccionario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../arboles/src/Ej13/Saco.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../arboles/src/Ej23/Prueba.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../arboles/src/Ej27/Prueba.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../arboles/src/Ej4/Ej4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examen2018.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../examenSept2018/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../examenSept2018/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../relacion4_haskell/DataStructures/Dictionary/AVLDictionary.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../relacion4_haskell/DataStructures/Dictionary/BSTDictionary.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../relacion4_haskell/DataStructures/Dictionary/DictionaryAxioms.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../relacion4_haskell/DataStructures/Graphics/DrawTrees.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../relacion4_haskell/DataStructures/Graphics/DummyDrawTrees.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../relacion4_haskell/DataStructures/Graphics/Vectorial.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../relacion4_haskell/DataStructures/Heap/HeapSort.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../relacion4_haskell/DataStructures/Heap/WBLeftistHeap.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../relacion4_haskell/DataStructures/PriorityQueue/LinearPriorityQueue.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../relacion4_haskell/DataStructures/PriorityQueue/PriorityQueueAxioms.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../relacion4_haskell/DataStructures/PriorityQueue/WBLeftistHeapPriorityQueue.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../relacion4_haskell/DataStructures/Queue/LinearQueue.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../relacion4_haskell/DataStructures/Queue/QueueAxioms.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../relacion4_haskell/DataStructures/Queue/TwoListsQueue.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../relacion4_haskell/DataStructures/SearchTree/AVL.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../relacion4_haskell/DataStructures/SearchTree/AVLTreeAxioms.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../relacion4_haskell/DataStructures/SearchTree/BST.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../relacion4_haskell/DataStructures/SearchTree/BSTAxioms.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../relacion4_haskell/DataStructures/Set/BSTSet.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../relacion4_haskell/DataStructures/Set/LinearSet.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../relacion4_haskell/DataStructures/Set/ListSet.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../relacion4_haskell/DataStructures/Set/SetAxioms.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../relacion4_haskell/DataStructures/Set/SortedLinearSet.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../relacion4_haskell/DataStructures/Stack/LinearStack.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../relacion4_haskell/DataStructures/Stack/StackAxioms.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../relacion4_haskell/DataStructures/Stack/StackOnList.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../relacion4_haskell/DataStructures/Util/Random.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../relacion4_haskell/DataStructures/Util/TestDatatype.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../relacion4_haskell/Relación tema 4.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../relacion4_haskell/ej10.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../relacion4_haskell/ej2.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../relacion4_haskell/ej6.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../relacion4_haskell/ej7.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/Relación ejercicios.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/Ejercicio11/main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/Ejercicio11/tuplaGenerica.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/Ejercicio12/Diccionario.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/Ejercicio12/prueba.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/Ejercicio13/AVLbag.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/Ejercicio13/prueba.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/Ejercicio4/Prueba.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/Ejercicio5/Prueba.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/dictionary/AVLDictionary.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/dictionary/Dictionary.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/dictionary/SortedLinkedDictionary$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/dictionary/SortedLinkedDictionary$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/dictionary/SortedLinkedDictionary$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/dictionary/SortedLinkedDictionary$Finder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/dictionary/SortedLinkedDictionary$KeyIterator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/dictionary/SortedLinkedDictionary$KeyValueIterator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/dictionary/SortedLinkedDictionary$Node.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/dictionary/SortedLinkedDictionary$NodeIterator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/dictionary/SortedLinkedDictionary$ValueIterator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/dictionary/SortedLinkedDictionary.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/either/Either.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/either/Left.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/either/Right.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/heap/BinaryHeap.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/heap/EmptyHeapException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/heap/Heap.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/heap/MaxiphobicHeap$Tree.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/heap/MaxiphobicHeap.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/heap/WBLeftistHeap$Tree.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/heap/WBLeftistHeap.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/list/ArrayList$ArrayListIterator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/list/ArrayList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/list/LinkedList$LinkedListIterator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/list/LinkedList$Node.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/list/LinkedList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/list/List.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/list/ListException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/priorityQueue/BinaryHeapPriorityQueue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/priorityQueue/EmptyPriorityQueueException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/priorityQueue/LinkedPriorityQueue$Node.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/priorityQueue/LinkedPriorityQueue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/priorityQueue/PriorityQueue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/priorityQueue/WBLeftistHeapPriorityQueue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/queue/ArrayQueue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/queue/EmptyQueueException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/queue/LinkedListQueue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/queue/LinkedQueue$Node.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/queue/LinkedQueue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/queue/Queue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/searchTree/AVL$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/searchTree/AVL$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/searchTree/AVL$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/searchTree/AVL$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/searchTree/AVL$5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/searchTree/AVL$InOrderIt.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/searchTree/AVL$InOrderTraversal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/searchTree/AVL$KeysValuesIt.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/searchTree/AVL$PostOrderIt.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/searchTree/AVL$PostOrderTraversal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/searchTree/AVL$PreOrderIt.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/searchTree/AVL$PreOrderTraversal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/searchTree/AVL$Traversal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/searchTree/AVL$Tree$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/searchTree/AVL$Tree$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/searchTree/AVL$Tree$Predicate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/searchTree/AVL$Tree.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/searchTree/AVL$ValuesIt.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/searchTree/AVL.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/searchTree/BST$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/searchTree/BST$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/searchTree/BST$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/searchTree/BST$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/searchTree/BST$5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/searchTree/BST$InOrderIt.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/searchTree/BST$InOrderTraversal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/searchTree/BST$KeysValuesIt.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/searchTree/BST$PostOrderIt.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/searchTree/BST$PostOrderTraversal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/searchTree/BST$PreOrderIt.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/searchTree/BST$PreOrderTraversal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/searchTree/BST$Traversal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/searchTree/BST$Tree.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/searchTree/BST$ValuesIt.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/searchTree/BST.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/searchTree/EmptySearchTreeException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/searchTree/SearchTree.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/set/AVLSet$Nothing.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/set/AVLSet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/set/BSTSet$Nothing.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/set/BSTSet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/set/LinkedListSet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/set/Set.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/set/SortedLinkedSet$LinkedSetIterator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/set/SortedLinkedSet$Node.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/set/SortedLinkedSet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/stack/ArrayStack.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/stack/EmptyStackException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/stack/LinkedListStack.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/stack/LinkedStack$Node.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/stack/LinkedStack.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/stack/Stack.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/dataStructures/tuple/Tuple2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/demos/heap/HeapSort.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/demos/list/ListsPerformance$Implementation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/demos/list/ListsPerformance.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/demos/queue/Josephus.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/demos/queue/QueueDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/demos/queue/QueuesCorrectness.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/demos/queue/QueuesPerformance$Implementation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/demos/queue/QueuesPerformance.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/demos/queue/RandomQueue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/demos/searchTree/SearchTreeDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/demos/stack/RandomStack.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/demos/stack/StackDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/demos/stack/StacksPerformance$Implementation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/out/production/Relación ejercicios/demos/stack/StacksPerformance.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/Ejercicio11/main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/Ejercicio11/tuplaGenerica.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/Ejercicio12/Diccionario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/Ejercicio12/prueba.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/Ejercicio13/AVLbag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/Ejercicio13/prueba.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/Ejercicio23/prueba.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/Ejercicio27/BSTextendido.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/Ejercicio4/Prueba.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/Ejercicio5/Prueba.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/dataStructures/dictionary/AVLDictionary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/dataStructures/dictionary/Dictionary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/dataStructures/dictionary/SortedLinkedDictionary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/dataStructures/either/Either.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/dataStructures/either/Left.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/dataStructures/either/Right.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/dataStructures/heap/BinaryHeap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/dataStructures/heap/EmptyHeapException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/dataStructures/heap/Heap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/dataStructures/heap/MaxiphobicHeap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/dataStructures/heap/WBLeftistHeap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/dataStructures/list/ArrayList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/dataStructures/list/LinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/dataStructures/list/List.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/dataStructures/list/ListException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/dataStructures/priorityQueue/BinaryHeapPriorityQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/dataStructures/priorityQueue/EmptyPriorityQueueException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/dataStructures/priorityQueue/LinkedPriorityQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/dataStructures/priorityQueue/PriorityQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/dataStructures/priorityQueue/WBLeftistHeapPriorityQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/dataStructures/queue/ArrayQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/dataStructures/queue/EmptyQueueException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/dataStructures/queue/LinkedListQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/dataStructures/queue/LinkedQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/dataStructures/queue/Queue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/dataStructures/searchTree/AVL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/dataStructures/searchTree/BST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/dataStructures/searchTree/EmptySearchTreeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/dataStructures/searchTree/SearchTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/dataStructures/set/AVLSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/dataStructures/set/BSTSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/dataStructures/set/LinkedListSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/dataStructures/set/Set.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/dataStructures/set/SortedLinkedSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/dataStructures/stack/ArrayStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/dataStructures/stack/EmptyStackException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/dataStructures/stack/LinkedListStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/dataStructures/stack/LinkedStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/dataStructures/stack/Stack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/dataStructures/tuple/Tuple2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/demos/heap/HeapSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/demos/list/ListsPerformance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/demos/queue/Josephus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/demos/queue/QueueDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/demos/queue/QueuesCorrectness.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/demos/queue/QueuesPerformance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/demos/queue/RandomQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/demos/searchTree/SearchTreeDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/demos/stack/RandomStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/demos/stack/StackDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/Relación ejercicios java/src/demos/stack/StacksPerformance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/haskell/DataStructures/Dictionary/AVLDictionary.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/haskell/DataStructures/Dictionary/BSTDictionary.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/haskell/DataStructures/Dictionary/DictionaryAxioms.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/haskell/DataStructures/Graphics/DrawTrees.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/haskell/DataStructures/Graphics/DummyDrawTrees.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/haskell/DataStructures/Graphics/Vectorial.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/haskell/DataStructures/Graphics/VectorialCairo.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/haskell/DataStructures/Heap/HeapSort.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/haskell/DataStructures/Heap/WBLeftistHeap.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/haskell/DataStructures/PriorityQueue/LinearPriorityQueue.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/haskell/DataStructures/PriorityQueue/MaxiphobicHeapPriorityQueue.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/haskell/DataStructures/PriorityQueue/PriorityQueueAxioms.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/haskell/DataStructures/PriorityQueue/WBLeftistHeapPriorityQueue.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/haskell/DataStructures/Práctica tema 4 heap/MaxiphobicHeap.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/haskell/DataStructures/Queue/LinearQueue.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/haskell/DataStructures/Queue/QueueAxioms.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/haskell/DataStructures/Queue/TwoListsQueue.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/haskell/DataStructures/SearchTree/AVL.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/haskell/DataStructures/SearchTree/AVLTreeAxioms.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/haskell/DataStructures/SearchTree/BST.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/haskell/DataStructures/SearchTree/BSTAxioms.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/haskell/DataStructures/Set/BSTSet.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/haskell/DataStructures/Set/LinearSet.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/haskell/DataStructures/Set/ListSet.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/haskell/DataStructures/Set/SetAxioms.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/haskell/DataStructures/Set/SortedLinearSet.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/haskell/DataStructures/Stack/LinearStack.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/haskell/DataStructures/Stack/StackAxioms.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/haskell/DataStructures/Stack/StackOnList.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/haskell/DataStructures/Util/Random.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/haskell/DataStructures/Util/TestDatatype.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/haskell/Demos/Dictionary/AVLDictDemo.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/haskell/Demos/Heap/HeapSortDemo.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/haskell/Demos/Heap/WBLeftistHeapDemo.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/haskell/Demos/PriorityQueue/PriorityQueueDemo.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/haskell/Demos/Queue/Josephus.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/haskell/Demos/Queue/QueueDemo.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/haskell/Demos/Queue/QueuesPerformance.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/haskell/Demos/SearchTree/AVLDemo.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/haskell/Demos/SearchTree/BSTDemo.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/haskell/Demos/Set/SetDemo.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/haskell/Demos/Stack/PolishNotation.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/haskell/Demos/Stack/StackDemo.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/haskell/Relación/Arboles generales.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/haskell/Relación/Ejercicio 10.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/haskell/Relación/Ejercicio 15, 16 y 17 .hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/haskell/Relación/Ejercicio 6.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../solucionRel4/haskell/Relación/Ejercicio 7.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Técnicas Computacionales/jk.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../modelado/Esamenes/ErWan/2018-5/Examen2018-5-2C/Examen2018-5-2C.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../modelado/Esamenes/ErWan/2018-5/Examen2018-5-3/Examen2018-5-3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/Practica3_Modelado.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/src/Ej1/Acceso.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/src/Ej1/Expediente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/src/Ej1/Paciente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/src/Ej1/TipoAcceso.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/src/Ej2/Activo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/src/Ej2/MedioPensionista.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/src/Ej2/Pensionista.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/src/Ej2/Trabajador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/src/Ej3/Bandeja.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/src/Ej3/Empty.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/src/Ej3/Estado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/src/Ej3/Full.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/src/Ej3/Normal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/src/Ej3/Pieza.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../modelado/Practica 3/~$muel Jurado Quintana.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../modelado/Practica 3/~$sús Parejo Aliaga.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../arboles/out/production/arboles/dataStructures/searchTree/AlturaMediaArbol.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../arboles/out/production/arboles/dataStructures/searchTree/BST$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../arboles/out/production/arboles/dataStructures/searchTree/BST$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../arboles/out/production/arboles/dataStructures/searchTree/BST$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../arboles/out/production/arboles/dataStructures/searchTree/BST$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../arboles/out/production/arboles/dataStructures/searchTree/BST$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../arboles/out/production/arboles/dataStructures/searchTree/BST$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../arboles/out/production/arboles/dataStructures/searchTree/BST$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/../arboles/out/production/arboles/dataStructures/searchTree/BST$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../arboles/out/production/arboles/dataStructures/searchTree/BST$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/../arboles/out/production/arboles/dataStructures/searchTree/BST$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../arboles/out/production/arboles/dataStructures/searchTree/BST$InOrderIt.class" beforeDir="false" afterPath="$PROJECT_DIR$/../arboles/out/production/arboles/dataStructures/searchTree/BST$InOrderIt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../arboles/out/production/arboles/dataStructures/searchTree/BST$InOrderTraversal.class" beforeDir="false" afterPath="$PROJECT_DIR$/../arboles/out/production/arboles/dataStructures/searchTree/BST$InOrderTraversal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../arboles/out/production/arboles/dataStructures/searchTree/BST$KeysValuesIt.class" beforeDir="false" afterPath="$PROJECT_DIR$/../arboles/out/production/arboles/dataStructures/searchTree/BST$KeysValuesIt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../arboles/out/production/arboles/dataStructures/searchTree/BST$PostOrderIt.class" beforeDir="false" afterPath="$PROJECT_DIR$/../arboles/out/production/arboles/dataStructures/searchTree/BST$PostOrderIt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../arboles/out/production/arboles/dataStructures/searchTree/BST$PostOrderTraversal.class" beforeDir="false" afterPath="$PROJECT_DIR$/../arboles/out/production/arboles/dataStructures/searchTree/BST$PostOrderTraversal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../arboles/out/production/arboles/dataStructures/searchTree/BST$PreOrderIt.class" beforeDir="false" afterPath="$PROJECT_DIR$/../arboles/out/production/arboles/dataStructures/searchTree/BST$PreOrderIt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../arboles/out/production/arboles/dataStructures/searchTree/BST$PreOrderTraversal.class" beforeDir="false" afterPath="$PROJECT_DIR$/../arboles/out/production/arboles/dataStructures/searchTree/BST$PreOrderTraversal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../arboles/out/production/arboles/dataStructures/searchTree/BST$Traversal.class" beforeDir="false" afterPath="$PROJECT_DIR$/../arboles/out/production/arboles/dataStructures/searchTree/BST$Traversal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../arboles/out/production/arboles/dataStructures/searchTree/BST$ValuesIt.class" beforeDir="false" afterPath="$PROJECT_DIR$/../arboles/out/production/arboles/dataStructures/searchTree/BST$ValuesIt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../arboles/out/production/arboles/dataStructures/searchTree/BST.class" beforeDir="false" afterPath="$PROJECT_DIR$/../arboles/out/production/arboles/dataStructures/searchTree/BST.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../arboles/src/dataStructures/searchTree/AlturaMediaArbol.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../arboles/src/dataStructures/searchTree/BST.java" beforeDir="false" afterPath="$PROJECT_DIR$/../arboles/src/dataStructures/searchTree/BST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../arboles/src/dataStructures/searchTree/Saco.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data.structures/haskell/DataStructures/Dictionary/AVLDictionary.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data.structures/haskell/DataStructures/Dictionary/BSTDictionary.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data.structures/haskell/DataStructures/Dictionary/DictionaryAxioms.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data.structures/haskell/DataStructures/Graphics/DrawTrees.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data.structures/haskell/DataStructures/Graphics/DummyDrawTrees.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data.structures/haskell/DataStructures/Graphics/Vectorial.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data.structures/haskell/DataStructures/Heap/HeapSort.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data.structures/haskell/DataStructures/Heap/WBLeftistHeap.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data.structures/haskell/DataStructures/PriorityQueue/LinearPriorityQueue.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data.structures/haskell/DataStructures/PriorityQueue/PriorityQueueAxioms.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data.structures/haskell/DataStructures/PriorityQueue/WBLeftistHeapPriorityQueue.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data.structures/haskell/DataStructures/Queue/LinearQueue.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data.structures/haskell/DataStructures/Queue/QueueAxioms.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data.structures/haskell/DataStructures/Queue/TwoListsQueue.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data.structures/haskell/DataStructures/SearchTree/AVL.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data.structures/haskell/DataStructures/SearchTree/AVLTreeAxioms.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data.structures/haskell/DataStructures/SearchTree/BST.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data.structures/haskell/DataStructures/SearchTree/BSTAxioms.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data.structures/haskell/DataStructures/Set/BSTSet.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data.structures/haskell/DataStructures/Set/LinearSet.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data.structures/haskell/DataStructures/Set/ListSet.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data.structures/haskell/DataStructures/Set/SetAxioms.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data.structures/haskell/DataStructures/Set/SortedLinearSet.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data.structures/haskell/DataStructures/Stack/LinearStack.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data.structures/haskell/DataStructures/Stack/StackAxioms.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data.structures/haskell/DataStructures/Stack/StackOnList.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data.structures/haskell/DataStructures/Util/Random.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data.structures/haskell/DataStructures/Util/TestDatatype.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../modelado/practicaParque/parqueDeAtracciones.use" beforeDir="false" afterPath="$PROJECT_DIR$/../../modelado/practicaParque/parqueDeAtracciones.use" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.4\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1mWTSZEJnJzo2gdJkvrlR5yg6IL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\amont\Escritorio\universidad\ED\examen2018\src" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3b2f349a-1003-4a9b-bb88-dd25b1d296a0" name="Default Changelist" comment="" />
+      <created>1609608352215</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1609608352215</updated>
+      <workItem from="1609608354003" duration="5348000" />
+      <workItem from="1609668465968" duration="550000" />
+      <workItem from="1609838904941" duration="635000" />
+      <workItem from="1609859446735" duration="1759000" />
+      <workItem from="1610100610261" duration="531000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>

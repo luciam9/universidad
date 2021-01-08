@@ -1,0 +1,78 @@
+model pruebaAsignaturas
+
+class Asignatura
+attributes
+numCreditos:Integer
+nombreAsignatura:String
+end
+
+class Imparticion
+end
+
+class Matricula
+attributes
+nota:Integer
+end
+
+class Persona
+end
+
+class Curso
+attributes
+anoInicio:Integer
+anoFinal:Integer
+end
+
+association MatriculadoEn between
+Persona[1..1]
+role alumno
+Matricula[1..*]
+role matriculas
+end
+
+association NotasEval between
+Imparticion [1..1]
+role imparticion
+Matricula [1..*]
+role matriculas
+end
+
+association MaterializaAsignatura between
+Asignatura [1..1]
+role asignatura
+Imparticion [0..*]
+role imparticiones
+end
+
+association Ofertada between
+Curso [1..1]
+role curso
+Imparticion [0..*]
+role imparticiones
+end
+
+association Imparte between
+Persona[1..1]
+role profesor
+Imparticion [1..*]
+role imparticiones
+end
+
+constraints
+
+context Matricula inv siApruebasNoTeMatriculasMas:
+self.nota >= 5 implies self.imparticion.asignatura.imparticiones -> excluding (self.imparticion)
+->select(
+	imp:Imparticion | imp.matriculas
+	->select(
+		m:Matricula | m.alumno = self.alumno
+	)
+	->notEmpty()
+)
+-> forAll(ev:Imparticion | ev.curso.anoFinal < self.imparticion.curso.anoFinal)
+
+context Imparticion inv noMatriculasDobles:
+self.matriculas -> isUnique(m:Matricula| m.alumno)
+
+context Curso inv noImparticionesDobles:
+self.imparticiones -> isUnique(imp:Imparticion| imp.asignatura)

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6c0767d4-3d78-4400-9217-c66cfd58a7bb" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1VI5YMIozBgPitJ58bsUowoK3eX" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Análisis y Diseño de Algoritmos/Prácticas/Práctica 4" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Javier\Desktop\Universidad\2ºAño\EstructuraDeDatos\Tema4\Relación ejercicios\src\Ejercicio4" />
+      <recent name="C:\Users\Javier\Desktop\Universidad\2ºAño\EstructuraDeDatos\Tema4\Relación ejercicios\src\dataStructures\heap" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Ejercicio4" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Javier\Desktop\Universidad\2ºAño\EstructuraDeDatos\Tema4\Relación ejercicios\src\demos\stack" />
+      <recent name="C:\Users\Javier\Desktop\Universidad\2ºAño\EstructuraDeDatos\Tema4\Relación ejercicios\src\demos\searchTree" />
+      <recent name="C:\Users\Javier\Desktop\Universidad\2ºAño\EstructuraDeDatos\Tema4\Relación ejercicios\src\demos\queue" />
+      <recent name="C:\Users\Javier\Desktop\Universidad\2ºAño\EstructuraDeDatos\Tema4\Relación ejercicios\src\demos\list" />
+      <recent name="C:\Users\Javier\Desktop\Universidad\2ºAño\EstructuraDeDatos\Tema4\Relación ejercicios\src\demos\heap" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.ejercicio23">
+    <configuration name="Ejercicio12" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Ejercicio12.prueba" />
+      <module name="Relación ejercicios" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Ejercicio13" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Ejercicio13.prueba" />
+      <module name="Relación ejercicios" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Ejercicio4" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Ejercicio4.Prueba" />
+      <module name="Relación ejercicios" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Ejercicio5" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Ejercicio5.Prueba" />
+      <module name="Relación ejercicios" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ejercicio11" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Ejercicio11.main" />
+      <module name="Relación ejercicios" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ejercicio23" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Ejercicio23.prueba" />
+      <module name="Relación ejercicios" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Ejercicio12" />
+      <item itemvalue="Application.Ejercicio13" />
+      <item itemvalue="Application.Ejercicio4" />
+      <item itemvalue="Application.Ejercicio5" />
+      <item itemvalue="Application.ejercicio11" />
+      <item itemvalue="Application.ejercicio23" />
+    </list>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+    <option name="showServicesTree" value="false" />
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",SHOW_NON_PUBLIC" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6c0767d4-3d78-4400-9217-c66cfd58a7bb" name="Default Changelist" comment="" />
+      <created>1576927814637</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576927814637</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="179" key="#Notifications" timestamp="1579017033693">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="179" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1579017033693" />
+    <state x="414" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578764683044">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578764683044" />
+    <state x="765" y="224" key="#com.intellij.ide.util.MemberChooser" timestamp="1579026508697">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="224" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1579026508697" />
+    <state x="689" y="305" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1578764678478">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="689" y="305" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578764678478" />
+    <state x="803" y="410" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1578672024762">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="803" y="410" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578672024762" />
+    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1579029009262">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1579029009262" />
+    <state width="914" height="157" key="GridCell.Tab.0.bottom" timestamp="1578768970131">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="157" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578768970131" />
+    <state width="914" height="157" key="GridCell.Tab.0.center" timestamp="1578768970131">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="157" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578768970131" />
+    <state width="914" height="157" key="GridCell.Tab.0.left" timestamp="1578768970131">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="157" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578768970131" />
+    <state width="914" height="157" key="GridCell.Tab.0.right" timestamp="1578768970131">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="157" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578768970131" />
+    <state x="636" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1579028991970">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="636" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579028991970" />
+    <state x="1103" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1578828805105">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1103" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1578828805105" />
+  </component>
+</project>

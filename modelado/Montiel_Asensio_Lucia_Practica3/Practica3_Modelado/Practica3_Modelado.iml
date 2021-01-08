@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$USER_HOME$/Escritorio/universidad/modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado">
+      <sourceFolder url="file://$USER_HOME$/Escritorio/universidad/modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

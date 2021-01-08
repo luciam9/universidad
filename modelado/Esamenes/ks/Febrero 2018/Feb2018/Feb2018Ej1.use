@@ -1,0 +1,141 @@
+model OperativeSystem
+
+class Sistema
+operations
+    nextProcess()
+    begin
+        declare newP: Proceso;
+        newP := self.procesos->asSet()->select(p | p.noHebrasBloqueadas() and p <> self.procesoEnEjecucion->asSequence()->first())->asSequence()->last();
+        delete(self, self.procesoEnEjecucion->asSequence()->first()) from enEjecucion;
+        self.procesoEnEjecucion->asSequence()->first().sleep();
+        newP.execute();
+        insert(self, newP) into enEjecucion;
+    end
+    post:  self.procesoEnEjecucion@pre <> self.procesoEnEjecucion
+end
+
+abstract class Recurso
+end
+
+class Global < Recurso
+end
+
+class Local < Recurso
+end
+
+class Proceso
+operations
+    noHebrasBloqueadas(): Boolean = self.hebras->forAll(h | h.esperandoRecurso->size() = 0)
+    execute()
+    begin
+    end
+    pre: self.sistema.procesoEnEjecucion->size() = 0
+    sleep()
+    begin
+        if self.sistema.procesoEnEjecucion = self then
+            self.sistema.nextProcess();
+        end
+    end
+    pre: self.hebras->exists(h | h.esperandoRecurso->size() > 0)
+    awake()
+    begin
+    end
+    pre: self.hebras->forAll(h | h.esperandoRecurso->size() = 0)
+statemachines
+    psm Estado
+        states
+            s: initial
+            Ejecucion
+            Dormido
+            Disponible
+        transitions
+            s -> Disponible
+            Disponible -> Dormido { sleep()}
+            Disponible -> Ejecucion { execute() }
+            Dormido -> Disponible {  awake() }
+            Ejecucion -> Dormido { sleep() }
+            Disponible -> Disponible { awake() }
+    end
+end
+
+class Hebra
+operations
+    changeState()
+    begin
+    end
+    requestResource(r: Recurso)
+    begin
+        if r.hebra->size() = 0 then
+            insert(r, self) into enUso;
+            if self.proceso.sistema.procesoEnEjecucion->size() = 0 then
+                self.proceso.execute();
+                insert (self.proceso.sistema, self.proceso) into enEjecucion;
+                self.changeState();
+            else
+                self.proceso.awake();
+                self.changeState();
+            end
+        else
+            insert (r, self) into enCola;
+            self.proceso.sleep();
+            self.changeState();
+        end
+    end
+    pre ImNotWaitingForAnyResource: self.esperandoRecurso->size() = 0
+    -- pre ifLocalThenSameProcess: r.oclIsTypeOf(Local) implies r.proceso = self.proceso
+statemachines
+    psm Estado
+        states
+            s: initial
+            Bloqueado
+            NoBloqueado
+        transitions
+            s -> NoBloqueado
+            NoBloqueado -> Bloqueado { [self.esperandoRecurso->size() > 0] changeState() }
+            Bloqueado -> NoBloqueado { [self.esperandoRecurso->size() = 0] changeState() }
+            Bloqueado -> Bloqueado { changeState() }
+            NoBloqueado -> NoBloqueado { changeState() }
+    end
+end
+
+
+association enEjecucion between
+Sistema [0..1] role ejecutandoEnSistema
+Proceso [0..1] role procesoEnEjecucion
+end
+
+composition sistemaCompuesto between
+Sistema [1] role sistema
+Proceso [0..128] role procesos
+end
+
+composition procesosCompuestos between
+Proceso [1] role proceso
+Hebra [1..32] role hebras
+end
+
+association enUso between
+Recurso [*] role recursos
+Hebra [0..1] role hebra
+end
+
+association recursosLocales between
+Local [*] role locales
+Proceso [1] role proceso
+end
+
+association enCola between
+Recurso [0..1] role esperandoRecurso
+Hebra [0..*] role hebrasEnCola
+end
+
+constraints
+
+context Sistema
+inv maxHebrasSistemas:
+    Hebra.allInstances->size() <= 64
+inv maxRecursosSistema:
+    Local.allInstances->size() + Global.allInstances->size() <= 128
+
+
+

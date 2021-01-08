@@ -46,7 +46,7 @@ public class BST<K extends Comparable<? super K>, V> implements SearchTree<K, V>
 	 * <p>Time complexity: O(1)
 	 */
 	public BST() {
-		root = null;
+		this.root = null;
 		size = 0;
 	}
 
@@ -249,25 +249,63 @@ public class BST<K extends Comparable<? super K>, V> implements SearchTree<K, V>
 		}
 	}
 
-	public K floor(K key, Tree tree){
+	public K floor(K key){
 
-		K candidato = root.key;
+		K candidato = null;
+		boolean encontrado = false;
 
-		if(root.key.compareTo(key)<=0){
+			while(!encontrado){
 
-			if(candidato.compareTo(root.key)<=0){
+				if(root.key.compareTo(key)<= 0){
 
-				candidato = root.key;
-			}
+					if(root.right.key.compareTo(key) >= 0){
 
-			while(root.left!=null) {
+						candidato = root.key;
+						encontrado = true;
 
-				floor(key, root.right);
+					}else{
+
+						root = root.right;
+					}
+				}else{
+
+					encontrado = true;
+				}
 			}
 
 			return candidato;
 
-		}else return null;
+
+	}
+
+	public K ceiling(K key){
+
+		K candidato = null;
+		boolean encontrado = false;
+
+		while(!encontrado){
+
+			if(root.key.compareTo(key) >= 0){
+				if(root.right != null){
+				if(root.right.key.compareTo(key) >= 0){
+
+					candidato = root.key;
+					encontrado = true;
+
+				}else{
+
+					root = root.right;
+				}}else{
+					encontrado = true;
+				}
+			}else{
+
+				root = root.left;
+			}
+		}
+
+		return candidato;
+
 	}
 
 	private boolean isMenor(K key, K key2){
@@ -279,40 +317,69 @@ public class BST<K extends Comparable<? super K>, V> implements SearchTree<K, V>
 		}else return false;
 	}
 
-	public int rank (K key, Tree tree){
+	public int rank (K key){
 
-		int ni = 0;
-		int nd = 0;
-		if(root.key.compareTo(key)>=0){
+		int n = 0;
 
-			return 0;
-		}else {
+		boolean acabado = false;
 
-			while(root!=null){
+		while(this.root != null /*&& !acabado*/){
 
-				ni = ni + rank(key, root.left);
-				nd = nd +rank(key, root.right);
+			if(this.root.key.compareTo(key) <0){
+
+				n++;
+				if(this.root.right != null){
+
+					BST tr = new BST();
+					tr.root = this.root.right;
+					n = n + tr.rank(key);
+				}
+				if(this.root.left != null){
+					BST tl = new BST();
+					tl.root = this.root.left;
+					n = n + tl.rank(key);
+				}
+
+
 			}
 
-			return ni + nd + 1;
-		}
+
+			/*if(root.key.compareTo(key)<0){
+
+				n++;
+				BST t = new BST();
+				t.root = this.root.left;
+				n = n + t.size;
+				if(root.right.key.compareTo(key)<0){
+
+					this.root = this.root.right;
+				}else{
+
+					acabado = true;
+				}
+			}else{
+				this.root = this.root.left;
+			}
+		}*/
 
 	}
+		return 0;}
 
 	public void deleteMin(){
 
 		K min = root.key;
-		Tree t = root;
+		System.out.println(min);
+		Tree t = this.root;
 
-		while(root!=null){
+		while(t.left!=null){
 
-			if(root.left.key.compareTo(min)<0){
 
-				min = root.left.key;
-			}
+				min = (K) t.key;
+				t = t.left;
+
 		}
 
-		deleteRec(t, min);
+		deleteRec(this.root, min);
 	}
 
 	public int size (K lo, K hi, Tree t){

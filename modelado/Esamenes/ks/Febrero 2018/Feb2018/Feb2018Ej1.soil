@@ -1,0 +1,26 @@
+reset
+!new Sistema('s')
+!new Proceso('p1')
+!new Proceso('p2')
+!new Proceso('p3')
+!insert (s, p1) into sistemaCompuesto
+!insert (s, p2) into sistemaCompuesto
+!insert (s, p3) into sistemaCompuesto
+!new Hebra('h1p1')
+!new Hebra('h1p2')
+!new Hebra('h1p3')
+!new Hebra('h2p1')
+!new Hebra('h2p3')
+!insert (p1, h1p1) into procesosCompuestos
+!insert (p1, h2p1) into procesosCompuestos
+!insert (p2, h1p2) into procesosCompuestos
+!insert (p3, h1p3) into procesosCompuestos
+!insert (p3, h2p3) into procesosCompuestos
+!new Global('rg1')
+!new Global('rg2')
+!new Local('rl1p2')
+!insert (rl1p2, p2) into recursosLocales
+!h1p1.requestResource(rg1)
+!h1p2.requestResource(rg2)
+!h1p1.requestResource(rg2)
+-- !h2p1.requestResource(rl1p2)

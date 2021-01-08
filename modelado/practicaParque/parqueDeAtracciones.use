@@ -259,12 +259,15 @@ end
 
 constraints
 
---el operario que atiende la seria trabaja en la cra a la que se asigna
+--El operario que atiende la averia trabaja en la CRA a la que se asigna
 context Solicitud inv OperarioTrabajaCRA: self.tecnico.cra = self.cra
 
-context Solicitud inv CRAVehiculoIgualseria: self.cra = self.vehiculo.atraccion.parque
+--La atraccion del vehiculo que manda la solicitud debe pertenecer a la misma CRA donde se manda esta
+context Solicitud inv CRAVehiculoIgualAveria: self.cra = self.vehiculo.atraccion.parque
 
+--La calle de la atracción debe estar definida
 context Atraccion inv nCalleDefinido: not self.calle.oclIsUndefined()
 
+--El número del vehículo no es nulo 
 context Vehiculo inv nVehiculoDefinido: not self.numero.oclIsUndefined()
 

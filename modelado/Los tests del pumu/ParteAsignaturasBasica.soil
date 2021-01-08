@@ -1,0 +1,66 @@
+reset
+!new Curso('curso1819')
+!set curso1819.anoInicio:=2018
+!set curso1819.anoFinal:=2019
+
+!new Curso('curso1920')
+!set curso1920.anoInicio:=2019
+!set curso1920.anoFinal:=2020
+
+!new Asignatura('Modelado')
+!set Modelado.numCreditos:=6
+!set Modelado.nombreAsignatura:='Modelado y Diseño de Software'
+
+!new Asignatura('Tecnicas')
+!set Modelado.numCreditos:=6
+!set Modelado.nombreAsignatura:='Técnicas Computacionales'
+
+!new Persona('AV')
+!new Persona('Fali')
+
+!new Persona('SJ')
+
+!new Persona('AG')
+
+!new Imparticion('ModDis1819')
+!new Imparticion('ModDis1920')
+!new Imparticion('TecComp1819')
+
+!insert (AV, ModDis1819) into Imparte
+!insert (AV, ModDis1920) into Imparte
+!insert (Fali, TecComp1819) into Imparte
+
+!new Matricula('SJ_ModDis1819')
+!set SJ_ModDis1819.nota:=3 --Cambiar nota a mayor que 5 para que falle
+
+!new Matricula('AG_ModDis1819')
+!set AG_ModDis1819.nota:=8
+
+!new Matricula('AG_TecComp1819')
+!set AG_TecComp1819.nota:=8
+
+!insert (Modelado, ModDis1819) into MaterializaAsignatura
+!insert (Modelado, ModDis1920) into MaterializaAsignatura
+!insert (Tecnicas, TecComp1819) into MaterializaAsignatura
+
+!insert (curso1819, ModDis1819) into Ofertada
+!insert (curso1819, TecComp1819) into Ofertada
+
+!insert (curso1920, ModDis1920) into Ofertada
+
+!insert (ModDis1819, SJ_ModDis1819) into NotasEval
+!insert (ModDis1819, AG_ModDis1819) into NotasEval
+
+!insert (TecComp1819, AG_TecComp1819) into NotasEval
+
+!insert (SJ,SJ_ModDis1819) into MatriculadoEn
+!insert (AG,AG_ModDis1819) into MatriculadoEn
+!insert (AG,AG_TecComp1819) into MatriculadoEn
+
+!new Matricula('SJ_ModDis1920')
+!set SJ_ModDis1920.nota:=3
+
+!insert (ModDis1920, SJ_ModDis1920) into NotasEval
+!insert (SJ, SJ_ModDis1920) into MatriculadoEn
+
+

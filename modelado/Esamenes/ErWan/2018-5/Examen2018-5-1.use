@@ -1,0 +1,60 @@
+model Java
+
+enum VisibilityKind {public, private, protected}
+
+abstract class NamedElement
+attributes
+  name:String
+end
+
+abstract class ElementVisibility
+attributes
+  visibility:VisibilityKind
+end
+
+abstract class TypeElement
+attributes
+  type:Type
+end
+
+abstract class Type < NamedElement
+end
+
+class DataType < Type
+end
+
+class Class < Type, ElementVisibility
+attributes
+  isAbstract:Boolean
+end
+
+class Feature < NamedElement, ElementVisibility, TypeElement
+end
+
+class Attribute < Feature
+end
+
+class Method < Feature
+end
+
+class Parameter < NamedElement, TypeElement
+end
+
+composition Methods between
+  Method[1] role method
+  Parameter[*] role parameters
+end
+
+composition Features between
+  Class[1] role class
+  Feature[*] role features
+end
+
+association Extend between
+  Class[0..1] role parents
+  Class[*] role children
+end
+
+constraints
+context Class inv notExtendSelf:
+  self.parents->excludes(self)

@@ -1,0 +1,63 @@
+model JavaMetamodel
+
+class Clase
+end
+
+class Atributo
+attributes
+    nombre: String
+end
+
+class TipoBasico
+end
+
+class Metodo
+attributes
+    nombre: String
+end
+
+class Parametro
+attributes
+    nombre: String
+end
+
+
+composition metodosDeClase between
+Metodo [*] role metodos
+Clase [1] role clase
+end
+
+composition atributosDeClase between
+Atributo [*] role atributos
+Clase [1] role clase
+end
+
+composition parametrosDelMetodo between
+Parametro [*] role parametros
+Metodo [1] role metodo
+end
+
+association atributoReferencia between 
+Atributo [0..1] role atributo
+Clase [0..1] role claseReferenciada
+end
+
+association tipoAtributo between
+Atributo [0..1] role atributo
+TipoBasico [0..1] role tipo
+end
+
+association parametroReferencia between
+Parametro [0..1] role parametro
+Clase [0..1] role clase
+end
+
+association tipoParametro between
+Parametro [0..1] role parametro
+TipoBasico [0..1] role tipo
+end
+
+association extends between 
+Clase [0..1] role extiende
+Clase [0..1] role extendida
+end
