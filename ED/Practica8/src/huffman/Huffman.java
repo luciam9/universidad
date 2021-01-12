@@ -5,8 +5,8 @@ package huffman;
  * Data Structures, Grado en Informatica. UMA.
  *
  *
- * Student's name:
- * Student's group:
+ * Student's name: Lucía Montiel Asensio
+ * Student's group: Ingeniería del Sofware, grupo C
  */
 
 import dataStructures.dictionary.AVLDictionary;
@@ -124,19 +124,26 @@ public class Huffman {
     // Exercise 3.c  
     public static Dictionary<Character, List<Integer>> huffmanCode(WLeafTree<Character> ht) {
 
+        while(!ht.isLeaf()){
+
+            if()
+        }
 
     }
 
     // Exercise 4  
     public static List<Integer> encode(String s, Dictionary<Character, List<Integer>> hc) {
-
-        ArrayList<Integer> codigo = new ArrayList<>();
+        List<Integer> codigo = new ArrayList<>();
 
         for(int i=0; i<s.length(); i++){
 
             Character c = s.charAt(i);
             List<Integer> list = hc.valueOf(c);
 
+            for(int i=0; i<list.size(); i++){
+
+                codigo.set(list.get(i), codigo.size());
+            }
         }
 
         return codigo;

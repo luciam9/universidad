@@ -19,50 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a550bfc-2714-4fd5-a2fa-30f5ac98dcc5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../ADA/Práctica4/out/production/Práctica4/EvaluacionExperimental.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ADA/Práctica4/out/production/Práctica4/Grafica$GraficaPane.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ADA/Práctica4/out/production/Práctica4/Grafica$Linea.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ADA/Práctica4/out/production/Práctica4/Grafica.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ADA/Práctica4/out/production/Práctica4/TableroSudoku.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ADA/Práctica4/out/production/Práctica4/Temporizador.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ADA/Práctica4/out/production/Práctica4/TestsCorreccion$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ADA/Práctica4/out/production/Práctica4/TestsCorreccion.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ADA/Práctica4/out/production/Práctica4/TestsTiempos$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ADA/Práctica4/out/production/Práctica4/TestsTiempos.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ADA/Práctica4/out/production/Práctica4/tests.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ADA/Práctica4/src/EvaluacionExperimental.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ADA/Práctica4/src/Grafica.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ADA/Práctica4/src/TableroSudoku.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ADA/Práctica4/src/Temporizador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ADA/Práctica4/src/TestsCorreccion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ADA/Práctica4/src/TestsTiempos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ADA/Práctica4/src/tests.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examen2018/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/examen2018/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examenSept2018/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/examenSept2018/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelado/Montiel_Asensio_Lucia_Practica3/PRÁCTICA 3.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/Practica3_Modelado.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/src/Ej1/Acceso.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/src/Ej1/Expediente.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/src/Ej1/Paciente.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/src/Ej1/Profesional.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/src/Ej1/TipoAcceso.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/src/Ej2/Activo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/src/Ej2/MedioPensionista.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/src/Ej2/Pensionista.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/src/Ej2/Trabajador.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/src/Ej3/Bandeja.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/src/Ej3/Empty.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/src/Ej3/Estado.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/src/Ej3/Full.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/src/Ej3/Normal.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/src/Ej3/Pieza.java" beforeDir="false" />
-    </list>
+    <list default="true" id="1a550bfc-2714-4fd5-a2fa-30f5ac98dcc5" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -88,6 +45,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Practica8" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -104,6 +62,7 @@
       <workItem from="1610100606190" duration="537000" />
       <workItem from="1610271544294" duration="650000" />
       <workItem from="1610289464837" duration="818000" />
+      <workItem from="1610469411600" duration="65000" />
     </task>
     <servers />
   </component>
@@ -123,6 +82,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="522" y="204" key="FileChooserDialogImpl" timestamp="1610469443081">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="522" y="204" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1610469443081" />
     <state x="685" y="140" key="new project wizard" timestamp="1609608347816">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
