@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="75ff339f-c1de-4f63-9195-0bec59c8835b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../ADA/Práctica4/out/production/Práctica4/EvaluacionExperimental.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ADA/Práctica4/out/production/Práctica4/Grafica$GraficaPane.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ADA/Práctica4/out/production/Práctica4/Grafica$Linea.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ADA/Práctica4/out/production/Práctica4/Grafica.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ADA/Práctica4/out/production/Práctica4/TableroSudoku.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ADA/Práctica4/out/production/Práctica4/Temporizador.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ADA/Práctica4/out/production/Práctica4/TestsCorreccion$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ADA/Práctica4/out/production/Práctica4/TestsCorreccion.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ADA/Práctica4/out/production/Práctica4/TestsTiempos$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ADA/Práctica4/out/production/Práctica4/TestsTiempos.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ADA/Práctica4/out/production/Práctica4/tests.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ADA/Práctica4/src/EvaluacionExperimental.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ADA/Práctica4/src/Grafica.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ADA/Práctica4/src/TableroSudoku.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ADA/Práctica4/src/Temporizador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ADA/Práctica4/src/TestsCorreccion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ADA/Práctica4/src/TestsTiempos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ADA/Práctica4/src/tests.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/dataStructures/dictionary/AVLDictionary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/dataStructures/dictionary/Dictionary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/dataStructures/dictionary/SortedLinkedDictionary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/dataStructures/either/Either.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/dataStructures/either/Left.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/dataStructures/either/Right.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/dataStructures/hashTable/HashPrimes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/dataStructures/hashTable/HashTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/dataStructures/hashTable/LinearProbingHashTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/dataStructures/hashTable/SeparateChainingHashTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/dataStructures/heap/BinaryHeap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/dataStructures/heap/EmptyHeapException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/dataStructures/heap/Heap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/dataStructures/heap/MaxiphobicHeap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/dataStructures/heap/WBLeftistHeap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/dataStructures/list/ArrayList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/dataStructures/list/LinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/dataStructures/list/List.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/dataStructures/list/ListException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/dataStructures/priorityQueue/BinaryHeapPriorityQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/dataStructures/priorityQueue/BinaryHeapPriorityQueueFIFO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/dataStructures/priorityQueue/EmptyPriorityQueueException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/dataStructures/priorityQueue/LinkedPriorityQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/dataStructures/priorityQueue/MaxiphobicHeapPriorityQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/dataStructures/priorityQueue/MaxiphobicHeapPriorityQueueFIFO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/dataStructures/priorityQueue/PriorityQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/dataStructures/priorityQueue/WBLeftistHeapPriorityQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/dataStructures/priorityQueue/WBLeftistHeapPriorityQueueFIFO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/dataStructures/queue/ArrayQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/dataStructures/queue/EmptyQueueException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/dataStructures/queue/LinkedListQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/dataStructures/queue/LinkedQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/dataStructures/queue/Queue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/dataStructures/queue/TwoStackQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/dataStructures/searchTree/AVL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/dataStructures/searchTree/BST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/dataStructures/searchTree/EmptySearchTreeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/dataStructures/searchTree/SearchTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/dataStructures/set/AVLSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/dataStructures/set/BSTSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/dataStructures/set/LinkedListSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/dataStructures/set/LinkedSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/dataStructures/set/Set.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/dataStructures/set/SortedArraySet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/dataStructures/set/SortedLinkedSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/dataStructures/stack/ArrayStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/dataStructures/stack/EmptyStackException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/dataStructures/stack/LinkedListStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/dataStructures/stack/LinkedStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/dataStructures/stack/Stack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/dataStructures/tuple/Tuple2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/demos/hastTable/HashTableTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/demos/heap/HeapSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/demos/list/ListsPerformance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/demos/list/RandomList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/demos/priorityQueue/DemoPriorityQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/demos/priorityQueue/PriorityQueuesPerformance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/demos/priorityQueue/RandomPriorityQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/demos/queue/HammingNumbers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/demos/queue/Josephus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/demos/queue/QueueDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/demos/queue/QueuesCorrectness.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/demos/queue/QueuesPerformance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/demos/queue/RandomQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/demos/searchTree/SearchTreeDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/demos/set/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/demos/set/RandomSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/demos/set/SetsPerformance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/demos/stack/PostfixToInfix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/demos/stack/RandomStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/demos/stack/Reverser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/demos/stack/StackDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/demos/stack/StacksPerformance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/huffman/Huffman.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/huffman/HuffmanException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ED/Practica8/src/huffman/WLeafTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ED/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ED/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ED/examen2018/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ED/examen2018/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ED/examenSept2018/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ED/examenSept2018/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRÁCTICA 3.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practica3_Modelado.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ej1/Acceso.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ej1/Expediente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ej1/Paciente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ej1/Profesional.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ej1/TipoAcceso.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ej2/Activo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ej2/MedioPensionista.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ej2/Pensionista.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ej2/Trabajador.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ej3/Bandeja.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ej3/Empty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ej3/Estado.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ej3/Full.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ej3/Normal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ej3/Pieza.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.4\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1mCtxBbV7kQv3wgg2BuUAxiR9lq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../ED/arboles" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Ej1" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\amont\Escritorio\universidad\modelado\Montiel_Asensio_Lucia_Practica3" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="75ff339f-c1de-4f63-9195-0bec59c8835b" name="Default Changelist" comment="" />
+      <created>1609009648276</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1609009648276</updated>
+      <workItem from="1609009649879" duration="2442000" />
+      <workItem from="1609019588216" duration="2767000" />
+      <workItem from="1609022937032" duration="5114000" />
+      <workItem from="1609081145978" duration="622000" />
+      <workItem from="1609086669263" duration="578000" />
+      <workItem from="1609105768801" duration="6529000" />
+      <workItem from="1609278432595" duration="5709000" />
+      <workItem from="1609600126047" duration="583000" />
+      <workItem from="1609668500303" duration="1165000" />
+      <workItem from="1609838900889" duration="644000" />
+      <workItem from="1609859452430" duration="1163000" />
+      <workItem from="1610100602230" duration="543000" />
+      <workItem from="1610271548899" duration="631000" />
+      <workItem from="1610289461438" duration="824000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1245" y="204" key="#com.intellij.ide.util.MemberChooser" timestamp="1609281138907">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1245" y="204" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1609281138907" />
+    <state x="1229" y="315" key="FileChooserDialogImpl" timestamp="1609506732110">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1229" y="315" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1609506732110" />
+  </component>
+</project>
