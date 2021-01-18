@@ -20,125 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44d6d590-9a49-40b1-a2c2-7cc31f7f01ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../ADA/Práctica4/out/production/Práctica4/EvaluacionExperimental.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ADA/Práctica4/out/production/Práctica4/Grafica$GraficaPane.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ADA/Práctica4/out/production/Práctica4/Grafica$Linea.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ADA/Práctica4/out/production/Práctica4/Grafica.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ADA/Práctica4/out/production/Práctica4/TableroSudoku.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ADA/Práctica4/out/production/Práctica4/Temporizador.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ADA/Práctica4/out/production/Práctica4/TestsCorreccion$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ADA/Práctica4/out/production/Práctica4/TestsCorreccion.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ADA/Práctica4/out/production/Práctica4/TestsTiempos$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ADA/Práctica4/out/production/Práctica4/TestsTiempos.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ADA/Práctica4/out/production/Práctica4/tests.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ADA/Práctica4/src/EvaluacionExperimental.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ADA/Práctica4/src/Grafica.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ADA/Práctica4/src/TableroSudoku.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ADA/Práctica4/src/Temporizador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ADA/Práctica4/src/TestsCorreccion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ADA/Práctica4/src/TestsTiempos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ADA/Práctica4/src/tests.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/dataStructures/dictionary/AVLDictionary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/dataStructures/dictionary/Dictionary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/dataStructures/dictionary/SortedLinkedDictionary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/dataStructures/either/Either.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/dataStructures/either/Left.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/dataStructures/either/Right.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/dataStructures/hashTable/HashPrimes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/dataStructures/hashTable/HashTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/dataStructures/hashTable/LinearProbingHashTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/dataStructures/hashTable/SeparateChainingHashTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/dataStructures/heap/BinaryHeap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/dataStructures/heap/EmptyHeapException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/dataStructures/heap/Heap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/dataStructures/heap/MaxiphobicHeap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/dataStructures/heap/WBLeftistHeap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/dataStructures/list/ArrayList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/dataStructures/list/LinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/dataStructures/list/List.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/dataStructures/list/ListException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/dataStructures/priorityQueue/BinaryHeapPriorityQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/dataStructures/priorityQueue/BinaryHeapPriorityQueueFIFO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/dataStructures/priorityQueue/EmptyPriorityQueueException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/dataStructures/priorityQueue/LinkedPriorityQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/dataStructures/priorityQueue/MaxiphobicHeapPriorityQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/dataStructures/priorityQueue/MaxiphobicHeapPriorityQueueFIFO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/dataStructures/priorityQueue/PriorityQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/dataStructures/priorityQueue/WBLeftistHeapPriorityQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/dataStructures/priorityQueue/WBLeftistHeapPriorityQueueFIFO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/dataStructures/queue/ArrayQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/dataStructures/queue/EmptyQueueException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/dataStructures/queue/LinkedListQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/dataStructures/queue/LinkedQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/dataStructures/queue/Queue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/dataStructures/queue/TwoStackQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/dataStructures/searchTree/AVL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/dataStructures/searchTree/BST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/dataStructures/searchTree/EmptySearchTreeException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/dataStructures/searchTree/SearchTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/dataStructures/set/AVLSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/dataStructures/set/BSTSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/dataStructures/set/LinkedListSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/dataStructures/set/LinkedSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/dataStructures/set/Set.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/dataStructures/set/SortedArraySet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/dataStructures/set/SortedLinkedSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/dataStructures/stack/ArrayStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/dataStructures/stack/EmptyStackException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/dataStructures/stack/LinkedListStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/dataStructures/stack/LinkedStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/dataStructures/stack/Stack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/dataStructures/tuple/Tuple2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/demos/hastTable/HashTableTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/demos/heap/HeapSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/demos/list/ListsPerformance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/demos/list/RandomList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/demos/priorityQueue/DemoPriorityQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/demos/priorityQueue/PriorityQueuesPerformance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/demos/priorityQueue/RandomPriorityQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/demos/queue/HammingNumbers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/demos/queue/Josephus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/demos/queue/QueueDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/demos/queue/QueuesCorrectness.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/demos/queue/QueuesPerformance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/demos/queue/RandomQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/demos/searchTree/SearchTreeDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/demos/set/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/demos/set/RandomSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/demos/set/SetsPerformance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/demos/stack/PostfixToInfix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/demos/stack/RandomStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/demos/stack/Reverser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/demos/stack/StackDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/demos/stack/StacksPerformance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/huffman/Huffman.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/huffman/HuffmanException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practica8/src/huffman/WLeafTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica9/src/HashTableTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../modelado/examenSep2020/codigoEj2/src/ContratoEnCurso.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../modelado/examenSep2020/codigoEj2/src/Empleado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../modelado/examenSep2020/codigoEj2/src/Empresa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica8/src/HuffmanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Practica8/src/HuffmanTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica8/src/huffman/Huffman.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Practica8/src/huffman/Huffman.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../examen2018/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../examen2018/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../modelado/Montiel_Asensio_Lucia_Practica3/PRÁCTICA 3.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/Practica3_Modelado.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/src/Ej1/Acceso.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/src/Ej1/Expediente.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/src/Ej1/Paciente.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/src/Ej1/Profesional.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/src/Ej1/TipoAcceso.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/src/Ej2/Activo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/src/Ej2/MedioPensionista.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/src/Ej2/Pensionista.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/src/Ej2/Trabajador.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/src/Ej3/Bandeja.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/src/Ej3/Empty.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/src/Ej3/Estado.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/src/Ej3/Full.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/src/Ej3/Normal.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../modelado/Montiel_Asensio_Lucia_Practica3/Practica3_Modelado/src/Ej3/Pieza.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../relacion4_haskell/ej10.hs" beforeDir="false" afterPath="$PROJECT_DIR$/../relacion4_haskell/ej10.hs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,6 +73,9 @@
       <workItem from="1610100524961" duration="1095000" />
       <workItem from="1610271592764" duration="591000" />
       <workItem from="1610289431958" duration="1746000" />
+      <workItem from="1610646931127" duration="1172000" />
+      <workItem from="1610967798632" duration="516000" />
+      <workItem from="1610985203186" duration="583000" />
     </task>
     <servers />
   </component>

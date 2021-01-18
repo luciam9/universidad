@@ -1,0 +1,20 @@
+--Los alquileres deben estar bien formados, es decir, si un alquiler ha acabado, su fecha de finalización ha de ser
+--estrictamente superior a su fecha de inicio. Dos alquileres de una misma persona no pueden estar solapados en el
+--tiempo
+
+context Alquiler inv FechaConsistente: self.fin >0 implies (self.fin > self.inicio)
+
+context Persona inv NoSolapados: self.alquiler-> forAll(a1, a2 | a1<>a2 implies (a1.fin >= 0 implies a1.fin<a2.inicio)
+or (a2.fin >= 0 implies a2.fin<a1.inicio))
+
+--Una persona solo puede tener a lo más un alquiler en activo. 
+context Persona NoMasDeUnAlquiler: self.alquiler -> select(a | a.fin<0) -> size <= 1
+
+--Defina la operación de consulta “vehiculoAlquilado():Vehiculo” sobre una persona, que devuelva el vehículo que tiene
+--ahora mismo alquilado una persona, o null si no tiene ningún vehículo alquilado
+
+class Persona
+    operations
+        vehiculoAlquilado(): Vehiculo = self.alquiler -> select (a | a.fin=-1)-> collect (vehiculo)-> any(true)
+    end
+

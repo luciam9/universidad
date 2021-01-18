@@ -1,0 +1,101 @@
+model Brazo
+
+enum RArmState {Idle, MovingUp, MovingDown, MovingRight, MovingLeft, MovingFwd, MovingBwd}
+
+class Clock
+    attributes
+        resolution: Real
+        NOW : Integer
+end
+
+abstract class ActiveObject
+end
+
+association Time between
+ Clock [1] role clock
+ ActiveObject [0..*] role activeObject
+end
+
+abstract class PositionedElement
+    attributes
+        x : Real
+        y :Real
+        z : Real
+end
+
+class TargetPosition < PositionedElement
+    attributes
+        timeStarted : Integer
+        timeReached : Integer
+end
+
+class RArm < ActiveObject, PositionedElement
+    attributes
+        withItem : boolean derive self.item <> null
+        speed : Real
+        state : RArmState
+        targetPosition : TargetPosition
+    operations
+
+        moveSideways(x : Real):Integer
+            begin
+                result:=0;
+                if x<> 0 and self.state = #idle then
+                    declare t:TargetPosition;
+                    t.setPos(x+self.x, self.y, sel.z);
+                    t.timeStarted:=self.clock.NOW;
+                    self.targetPosition:=t;
+                    self.state:=if x>0.0 then #MovingRight else #MovingLeft endif;
+                    result:=(x.abs()/(self.speed*self.clock.resolution)).ceil();
+                    end;
+
+
+        grasp() : Boolean
+            begin
+                declare t : item;
+                t := Item.allInstances -> select (i | i.isAt(self.x, self.y, self.z))-> any(true);
+
+                if t <> null then
+                    insert (self, t) into Grasp;
+                end
+                result:=t<>null;
+            end
+
+            post graspOk: let i1:Item = Item.allInstances@pre->select(i|i.isAt(self.x,self.y,self.z))->any(true) in
+            (self.item = i1) and (result = (i1<>null))
+
+        drop()
+            begin
+
+end
+
+class Item < PositionedElement
+end
+
+class RArmBase < PositionedElement
+end
+
+class Parameters
+    attributes
+        maxLengthX:Real init:20.0
+        maxLengthY:Real init:20.0
+        maxLengthZ:Real init:20.0
+    constraints
+        inv attsOK: maxLengthX>=0.0 and maxLengthY>=0.0 and maxLengthZ>=0.0
+end
+
+aggregation Params between
+ RArm [*] role arm
+ Parameters [1] role parameters
+end
+
+aggregation Grasp between
+ RArm [0..1] role arm
+ Item [0..1] role item
+end
+
+
+aggregation Base between
+ RArm [0..1] role arm
+ RArmBase [1] role base
+end

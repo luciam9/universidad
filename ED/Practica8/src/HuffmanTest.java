@@ -35,7 +35,7 @@ public class HuffmanTest {
 
         // Exercise 2
 
-        System.out.println("\nExercise 2.a - leaves:");
+        /*System.out.println("\nExercise 2.a - leaves:");
         System.out.println(Huffman.huffmanLeaves(msg));
         System.out.println("\nExercise 2.b - huffman tree with one priority queue:");
         System.out.print(Huffman.huffmanTree(msg));
@@ -97,4 +97,4 @@ public class HuffmanTest {
             System.out.println("***** decoding WRONG!");
         }
     }
-}
+}*/

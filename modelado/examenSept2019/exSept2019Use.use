@@ -1,0 +1,159 @@
+model Libros
+
+enum TipoEdicion {bolsillo, tapaDura, lujo}
+
+class Libro 
+    attributes
+        titulo : String
+        idiomaOriginal:String derive: self.edicionOriginal.idioma
+        superVentas : Boolean derive: self.edicio.ejemplar -> size() > 10000
+end 
+
+class Persona < Propietario, Prestamista
+    attributes
+        nombre : String
+        fnac : Integer
+        fdec : Integer
+end
+
+association Autoria between
+ Libro [*] role libroEscrito
+ Persona [1..*] role autor
+end
+
+class Edicion 
+    attributes
+        tipo : TipoEdicion
+        anyo : Integer
+        idioma : String
+        numPaginas : Integer
+end
+
+association Ilustracion between 
+    Libro[*] role libroIlustrado
+    Persona[*] role ilustrador
+end
+
+association Traduccion between 
+    Libro[*] role libroTraducido
+    Persona[*] role traductor
+end
+
+association edicionLibro between
+    Libro[1] role libro 
+    Edicion [1..*] role edicion 
+end
+
+association edicionOriginal between
+    Libro [1] role libroOriginal
+    Edicion [1] role edicionOriginal
+end
+
+class Ejemplar 
+end
+
+composition Publicacion between
+    Ejemplar [1..*] role ejemplar
+    Edicion [1] role edicion
+end
+
+abstract class Propietario
+    operations 
+        comprar(e : Ejemplar, comprador : Propietario)
+            begin
+                delete(e, self) from Propiedad;
+                insert(e, comprador) into Propiedad;
+            end
+        
+        pre puedoComprar: e.propietario=self
+        pre compradorOk:  (comprador.oclIsKindOf(Persona) implies
+                (self.oclIsKindOf(Persona) or self.oclIsKindOf(Tienda))) and
+                (not comprador.oclIsKindOf(Editorial)) and
+                (not self.oclIsKindOf(Biblioteca))
+        post nuevoPropietario: e.propietario = comprador
+end
+
+class Editorial < Propietario
+    operations 
+    crearEdicion(l : Libro, n : Integer)
+        begin
+            declare ed : Edicion, e : Ejemplar;
+            ed:= new Edicion;
+            ed.tipo := #bolsillo;
+            ed.anyo := 2019;
+            ed.idioma:='Español';
+            ed.numPaginas:=100;
+            insert(l, ed) into edicionLibro;
+            if l.edicionOriginal=null then insert(l,ed) into EdicionOriginal; end;
+            insert(self,ed) into CrearEdicion;
+            for i in Sequence{1..n} do
+            e:=new Ejemplar;
+            insert(ed,e)into Publicacion;
+            insert(e,self)into Propiedad;
+        end;
+     end
+end
+
+association CrearEdicion between
+    Editorial [1] role editorial
+    Edicion [*] role edicion
+end
+
+abstract class Prestamista
+end
+
+associationclass Prestamo between
+ Ejemplar [*] role ejemplarPrestado
+ Biblioteca [*] role prestador
+end
+
+association Prestar between
+ Prestamo [*] role elprestamo
+ Prestamista [1] role prestamista
+end
+
+class Biblioteca < Propietario, Prestamista
+    operations 
+    prestar(e:Ejemplar, p : Prestamista)
+        begin
+            declare l : Prestamo;
+            l := new Prestamo between (e, self);
+            insert(l, p) into Prestar;
+        end
+    pre ValidPrestamista: (not p.oclIsKindOf(Tienda)) and
+    (not p.oclIsKindOf(Editorial)) and
+    ((p.oclIsKindOf(Persona) and self.oclIsKindOf(Biblioteca)) implies
+    self.usuario->includes(p))
+    pre esPropietario: e.propietario=self
+
+    devolver(e: Ejemplar, p: Prestamista)
+        begin
+            declare l:Prestamo;
+            l:=e.prestamo->any(l|l.ejemplarPrestado=e and l.prestador=self and l.prestamista=p);
+            destroy(l);
+        end
+    end
+
+association Propiedad between
+ Ejemplar [*] role ejemplarPropio
+ Propietario [1] role propietario
+end
+
+association UsuarioBiblio between
+ Persona [*] role usuario
+ Biblioteca [*] role biblioteca
+end
+
+class Tienda < Propietario
+end
+
+constraints
+context Persona inv ConsistentDates: not self.fdec.oclIsUndefined() implies self.fnac < self.fdec
+context Biblioteca inv PrestamoPropio: self.ejemplarPropio -> includesAll(self.ejemplarPrestado)
+context Edicion inv LibroOriginalOk: self.libro = self.libroOriginal
+context Libro inv EdicionOriginalSubset: self.edicion -> includes (self.edicionOriginal)
+context Edicion inv Consistency: self.anyo > 0 and self.numPaginas > 0
+context Libro inv AniosedicionesOK: self.edicion -> forAll(e | e.anyo >= self.edicionOriginal.anyo)
+context Persona inv NoMasDe100: self.ejemplarPropio -> 
+select(l | self.libroEscrito -> includes(l.edicion.libro)) -> size <= 100
+

@@ -81,6 +81,8 @@ public class Huffman {
 
             throw new HuffmanException("El árbol no tiene suficientes elementos");
         }
+
+
     }
 
     private static boolean diferentes(PriorityQueue<WLeafTree<Character>> queue){
@@ -122,10 +124,17 @@ public class Huffman {
     }
 
     // Exercise 3.c  
-    public static Dictionary<Character, List<Integer>> huffmanCode(WLeafTree<Character> ht) {
+   /* public static Dictionary<Character, List<Integer>> huffmanCode(WLeafTree<Character> ht) {
+
+        while(!ht.isLeaf()){
+
+            if(ht.leftChild()!=null){
 
 
-    }
+            }
+        }
+        return new AVLDictionary<>()<Character, List<Integer>>();
+    }*/
 
     // Exercise 4  
     public static List<Integer> encode(String s, Dictionary<Character, List<Integer>> hc) {
@@ -137,6 +146,10 @@ public class Huffman {
             Character c = s.charAt(i);
             List<Integer> list = hc.valueOf(c);
 
+            for(int j=0; j<list.size(); j++){
+
+                codigo.set(codigo.size(), list.get(i));
+            }
         }
 
         return codigo;
