@@ -149,7 +149,7 @@ import dataStructures.tuple.Tuple2;
 	public void insert(K key, V value) {
 		if(loadFactor()>maxLoadFactor)
 			rehashing();		
-		
+
 		boolean insertado = false;
 
 		int i =searchIdx(key);
@@ -160,6 +160,7 @@ import dataStructures.tuple.Tuple2;
 		}
 		else{
 			int c = hash(key);
+
 			while(!insertado){
 
 				if(keys[c] == null){
@@ -169,16 +170,16 @@ import dataStructures.tuple.Tuple2;
 					size++;
 					insertado = true;
 
-				}else if (c == keys.length-1){
+				}else {
+					if (c == keys.length-1){
 
-					c = 0;
+						c = 0;
 				}else{
-
-					c++;
+						c++;
 				}
 			}
 		}
-	}
+	}}
 	
 	/** 
 	 * If key is associated, association is removed from table. 
