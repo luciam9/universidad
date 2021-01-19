@@ -77,20 +77,26 @@ import dataStructures.tuple.Tuple2;
 	private int searchIdx(K key) {
 
 		boolean esta = false;
+		boolean esNulo = false;
 		int c = hash(key);
 
-		while(!esta) {
+		while(!esta && !esNulo) {
 
 			if(keys[c] != null){
 				if(keys[c].equals(key)){
 				esta = true;}
 
 			}else if(keys[c] == null){
+				esNulo = true;
 
-				break;
 			}else{
+				if(c==keys.length-1){
 
-				c++;
+					c = 0;
+
+				}else{
+					c++;
+				}
 			}
 		}
 
@@ -143,7 +149,7 @@ import dataStructures.tuple.Tuple2;
 	public void insert(K key, V value) {
 		if(loadFactor()>maxLoadFactor)
 			rehashing();		
-
+		
 		boolean insertado = false;
 
 		int i =searchIdx(key);
@@ -153,24 +159,25 @@ import dataStructures.tuple.Tuple2;
 			values[i] = value;
 		}
 		else{
-		int c = hash(key);
-		while(!insertado){
+			int c = hash(key);
+			while(!insertado){
 
-			if(keys[c] == null){
+				if(keys[c] == null){
 
-				keys[c] = key;
-				values[c] = value;
-				size++;
-				insertado = true;
+					keys[c] = key;
+					values[c] = value;
+					size++;
+					insertado = true;
 
-			}else if (c == keys.length-1){
+				}else if (c == keys.length-1){
 
-				c = 0;
-			}else{
+					c = 0;
+				}else{
 
-				c++;
+					c++;
+				}
 			}
-		}}
+		}
 	}
 	
 	/** 
