@@ -57,14 +57,14 @@ public class HashTableTest {
 		System.out.println("TEST for insert and search");
 		testEq(scHashTable,lpHashTable);
 		
-		/*remove(rnd,scHashTable,lpHashTable);
+		remove(rnd,scHashTable,lpHashTable);
 		System.out.println("TEST for delete and search");
 		testEq(scHashTable,lpHashTable);
 
 		System.out.println("Associations traversal:");
 		for(Tuple2<Integer, String> t : lpHashTable.keysValues())
 			System.out.print(t+" ");		
-		System.out.println();*/
+		System.out.println();
 		
 	}
 	

@@ -179,10 +179,10 @@ public class TableroSudoku implements Cloneable {
 		boolean esta = false;
 		int i = -1;
 
-		while(i < 3 && !esta){
+		while(i < 2 && !esta){
 
 			int j = -1;
-			while(j < 3 && !esta){
+			while(j < 2 && !esta){
 
 				if(celdas[fila+i][columna+j] == valor){
 
@@ -220,12 +220,13 @@ public class TableroSudoku implements Cloneable {
 		if(numeroDeFijos() == 9*9){
 
 			soluciones.add(new TableroSudoku(this));
+
 		}else if (estaLibre(fila, columna)){
 
 			int[] posSol = conjuntoSoluciones(fila, columna);
 			int i = 0;
 
-			while(posSol.length < i) {
+			while(posSol.length > i) {
 
 				int num = posSol[i];
 				i++;
@@ -242,7 +243,7 @@ public class TableroSudoku implements Cloneable {
 					copiaFila++;
 				}
 
-				copia.resolverTodos(soluciones, fila, columna);
+				copia.resolverTodos(soluciones, copiaFila, copiaCol);
 			}
 		}else{
 

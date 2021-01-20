@@ -83,31 +83,29 @@ import dataStructures.tuple.Tuple2;
 		while(!esta && !esNulo) {
 
 			if(keys[c] != null){
+
 				if(keys[c].equals(key)){
-				esta = true;}
+
+				esta = true;
+
+				}else{
+
+					if(c==keys.length-1){
+
+						c=0;
+					}else{
+
+						c++;
+					}
+				}
 
 			}else if(keys[c] == null){
 				esNulo = true;
 
-			}else{
-				if(c==keys.length-1){
-
-					c = 0;
-
-				}else{
-					c++;
-				}
 			}
 		}
 
-		if(esta){
-
-			return c;
-		}
-		else{
-
-			return -1;
-		}
+		return c;
 	}	
 
 	/** 
@@ -118,12 +116,18 @@ import dataStructures.tuple.Tuple2;
 
 		int pos = searchIdx(key);
 
-		if(pos<0){
+		if(keys[pos]!=null){
 
-			return null;
+			if(keys[pos].equals(key)){
+			return values[pos];
+			}else{
+
+				return null;
+			}
+
 		}else {
 
-			return values[pos];
+			return null;
 		}
 	}
 	
@@ -150,33 +154,35 @@ import dataStructures.tuple.Tuple2;
 		if(loadFactor()>maxLoadFactor)
 			rehashing();		
 
+		if(key == null) throw new IllegalArgumentException("La clave es nula");
 		boolean insertado = false;
 
-		int i =searchIdx(key);
+		V v = search(key);
 
-		if(i>=0){
+		if(v!=null){
 
+			int i = searchIdx(key);
 			values[i] = value;
 		}
 		else{
 			int c = hash(key);
 
 			while(!insertado){
+				if(keys[c] != null){
 
-				if(keys[c] == null){
+					if (c == keys.length-1){
 
+						c = 0;
+					}else{
+						c++;
+					}
+
+
+				}else {
 					keys[c] = key;
 					values[c] = value;
 					size++;
 					insertado = true;
-
-				}else {
-					if (c == keys.length-1){
-
-						c = 0;
-				}else{
-						c++;
-				}
 			}
 		}
 	}}
@@ -193,7 +199,7 @@ import dataStructures.tuple.Tuple2;
 	public void delete(K key) {
 
 		int i = searchIdx(key);
-		if(i>0){
+		if(keys[i]!=null){
 			keys[i] = null;
 			values[i] = null;
 			i++;
@@ -203,7 +209,9 @@ import dataStructures.tuple.Tuple2;
 			K clave = keys[i];
 			V valor = values[i];
 
-			delete(clave);
+			keys[i] = null;
+			values[i] = null;
+
 			insert(clave, valor);
 			i++;
 		}
@@ -252,7 +260,16 @@ import dataStructures.tuple.Tuple2;
 
 		// advance nextIdx to be index of next to be visited element
 		public void advance() {
-			// to be completed
+
+ 			if(nextIdx==keys.length-1){
+
+ 				nextIdx = 0;
+ 				visited++;
+			}else{
+
+ 				nextIdx++;
+ 				visited++;
+			}
 		}
 
 		public void remove() {
